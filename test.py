@@ -38,15 +38,10 @@ while not done:
         if event.type == pygame.QUIT: # If user clicked close
             done = True # Flag that we are done so we exit this loop
 
-    # --- Game logic should go here
-
-    # --- Drawing code should go here
-
-    # First, clear the screen to white. Don't put other drawing commands
-    # above this, or they will be erased with this command.
     screen.fill(WHITE)
 
-    # --- Go ahead and update the screen with what we've drawn.
+
+
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
