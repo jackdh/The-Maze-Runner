@@ -1,171 +1,256 @@
-"""
-# Sample Python/Pygame Programs
-# Simpson College Computer Science
-# http://programarcadegames.com/
-# http://simpson.edu/computer-science/
- 
-# Explanation video: http://youtu.be/8IRyt7ft7zg
-"""
- 
 import pygame
- 
+from questions import *
+
 """
 Global constants
 """
- 
+
 # Colors
-BLACK    = (   0,   0,   0) 
-WHITE    = ( 255, 255, 255) 
-BLUE     = (   0,   0, 255)
- 
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+GREEN = (124, 252, 0)
+RED = ( 255, 0, 0)
 # Screen dimensions
-SCREEN_WIDTH  = 800
-SCREEN_HEIGHT = 600
- 
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
+
 # This class represents the bar at the bottom that the player controls
 class Player(pygame.sprite.Sprite):
     """ This class represents the bar at the bottom that the player controls. """
- 
+
     # Set speed vector
     change_x = 0
     change_y = 0
     walls = None
-     
+
     # Constructor function
-    def __init__(self, x, y):
+    def __init__(self, start_y, start_x):
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
-  
+
+        self.reset_position_y = start_y
+        self.reset_position_x = start_x
+
         # Set height, width
         self.image = pygame.Surface([15, 15])
-        self.image.fill(WHITE)
- 
+        self.image.fill(RED)
+
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
-        self.rect.y = y
-        self.rect.x = x
-     
+        self.rect.y = self.reset_position_y
+        self.rect.x = self.reset_position_x
+
     def changespeed(self, x, y):
         """ Change the speed of the player. """
         self.change_x += x
         self.change_y += y
-         
+
     def update(self):
         """ Update the player position. """
         # Move left/right
         self.rect.x += self.change_x
-         
+
         # Did this update cause us to hit a wall?
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
-            # If we are moving right, set our right side to the left side of the item we hit
-            if self.change_x > 0:
-                self.rect.right = block.rect.left
-            else:
-                # Otherwise if we are moving left, do the opposite.
-                self.rect.left = block.rect.right
- 
+            self.rect.y = self.reset_position_y
+            self.rect.x = self.reset_position_x
+
         # Move up/down
         self.rect.y += self.change_y
-          
+
         # Check and see if we hit anything
-        block_hit_list = pygame.sprite.spritecollide(self, self.walls, False) 
+        block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
-                 
-            # Reset our position based on the top/bottom of the object.
-            if self.change_y > 0:
-                self.rect.bottom = block.rect.top 
-            else:
-                self.rect.top = block.rect.bottom            
-   
+            self.rect.y = self.reset_position_y
+            self.rect.x = self.reset_position_x
+
+
 class Wall(pygame.sprite.Sprite):
     """ Wall the player can run into. """
-    def __init__(self, x, y, width, height):
-        """ Constructor for the wall that the player can run into. """
+
+    def __init__(self, x, y, width, height, color):
+        """ Constructor for the wall that the player can run into.
+        :rtype : object
+        """
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
- 
+
         # Make a blue wall, of the size specified in the parameters
         self.image = pygame.Surface([width, height])
-        self.image.fill(BLUE)
- 
+        self.image.fill(color)
+
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
         self.rect.y = y
         self.rect.x = x
-         
-         
-# Call this function so the Pygame library can initialize itself
+
+
+class EndZone(pygame.sprite.Sprite):
+
+    def __init__(self, x, y,):
+        """ Constructor for the Endzone """
+
+        # Call the parent's constructor
+        pygame.sprite.Sprite.__init__(self)
+
+        self.image = pygame.Surface([15, 15])
+        self.image.fill(GREEN)
+
+        # Make a green box
+
+        # Make our top-left corner the passed-in location.
+        self.rect = self.image.get_rect()
+        self.rect.y = y
+        self.rect.x = x
+
+def question(number):
+
+    questions = { 1: QuestionOne, 2: QuestionTwo}
+    question = questions[number]()
+    question_text = question.get_question()
+    answer_text = question.get_answer()
+    fake_one = question.get_fake_one()
+    fake_two = question.get_fake_two()
+    fake_three = question.get_fake_three()
+
+
+    font = pygame.font.Font(None, 36)
+
+    #Questions
+    text = font.render(question_text, 1, WHITE)
+    textpos = text.get_rect()
+    textpos.centerx = screen.get_rect().centerx
+    textpos.centery = 30
+    screen.blit(text, textpos)
+
+    text = font.render("A: "+ answer_text, 1, WHITE)
+    textpos = text.get_rect()
+    textpos.topleft = (30,60)
+    screen.blit(text, textpos)
+
+    text = font.render("B: "+ fake_one, 1, WHITE)
+    textpos = text.get_rect()
+    textpos.topleft = (30,120)
+    screen.blit(text, textpos)
+
+    text = font.render("C: "+ fake_two, 1, WHITE)
+    textpos = text.get_rect()
+    textpos.topleft = (300,60)
+    screen.blit(text, textpos)
+
+    text = font.render("D: "+ fake_three, 1, WHITE)
+    textpos = text.get_rect()
+    textpos.topleft = (300,120)
+    screen.blit(text, textpos)
+
+
+
+
+
+
+# Call this function so the Py game library can initialize itself
 pygame.init()
- 
+
 # Create an 800x600 sized screen
 screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
- 
+
 # Set the title of the window
-pygame.display.set_caption('Test')
- 
+pygame.display.set_caption('Prototype')
+
 # List to hold all the sprites
+
 all_sprite_list = pygame.sprite.Group()
- 
-# Make the walls. (x_pos, y_pos, width, height)
+
 wall_list = pygame.sprite.Group()
- 
-wall = Wall(0,0,10,600)
-wall_list.add(wall)
-all_sprite_list.add(wall)
- 
-wall = Wall(10,0,790,10)
-wall_list.add(wall)
-all_sprite_list.add(wall)
- 
-wall = Wall(10,200,100,10)
-wall_list.add(wall)
-all_sprite_list.add(wall)
- 
+
+end_zone_list = pygame.sprite.Group()
+
+text = "This is some text"
+font = pygame.font.Font(None, 25)
+text = font.render("Score: " + text, True, WHITE)
+screen.blit(text, [250, 250])
+
+# Map one walls
+walls_to_make = [(10, 300, 700, 10, WHITE),
+                 (150, 450, 10, 340, WHITE),
+                 (300, 450, 10, 340, WHITE),
+                 (450, 450, 10, 340, WHITE),
+                 (600, 450, 10, 340, WHITE),
+                 ]
+for i in range(len(walls_to_make)):
+    wall = Wall(*walls_to_make[i])
+
+    wall_list.add(wall)
+    all_sprite_list.add(wall)
+
+# Loop to create the side walls.
+walls_to_make = [(0, 200, 10, 600, BLUE),
+                 (10, 200, 790, 10, BLUE),
+                 (0, 790, 800, 10, BLUE),
+                 (790, 200, 10, 600, BLUE)]
+
+for i in range(4):
+    wall = Wall(*walls_to_make[i])
+    wall_list.add(wall)
+    all_sprite_list.add(wall)
+
+
+EndZone_to_make = [(70, 720), (220, 720), (370, 720)]
+for i in range(len(EndZone_to_make)):
+    end_zone = EndZone(*EndZone_to_make[i])
+    wall_list.add(end_zone)
+    all_sprite_list.add(end_zone)
+
 # Create the player paddle object
-player = Player(50, 50)
+player = Player(250, 50)
 player.walls = wall_list
- 
 all_sprite_list.add(player)
- 
+
+
 clock = pygame.time.Clock()
- 
+
 done = False
- 
+
 while not done:
-     
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
- 
+
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                player.changespeed(-3,0)
+                player.changespeed(-3, 0)
             elif event.key == pygame.K_RIGHT:
-                player.changespeed(3,0)
+                player.changespeed(3, 0)
             elif event.key == pygame.K_UP:
-                player.changespeed(0,-3)
+                player.changespeed(0, -3)
             elif event.key == pygame.K_DOWN:
-                player.changespeed(0,3)
-                 
+                player.changespeed(0, 3)
+            elif event.key == pygame.K_ESCAPE:
+                pygame.quit()
+
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT:
-                player.changespeed(3,0)
+                player.changespeed(3, 0)
             elif event.key == pygame.K_RIGHT:
-                player.changespeed(-3,0)
+                player.changespeed(-3, 0)
             elif event.key == pygame.K_UP:
-                player.changespeed(0,3)
+                player.changespeed(0, 3)
             elif event.key == pygame.K_DOWN:
-                player.changespeed(0,-3)
-  
+                player.changespeed(0, -3)
+
     all_sprite_list.update()
-     
+
     screen.fill(BLACK)
-     
+
+    question(2)
+
     all_sprite_list.draw(screen)
- 
+
     pygame.display.flip()
- 
+
     clock.tick(60)
-             
+
 pygame.quit()

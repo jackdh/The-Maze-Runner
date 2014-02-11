@@ -1,4 +1,9 @@
-dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+import json
 
-print ("dict['Name']: ", dict['Name'])
-print ("dict['Age']: ", dict['Age'])
+with open('questions.json') as f:
+    questions = json.load(f)
+    question_number= questions[2] # 0 For getting first question answer set
+    print(question_number["question"])
+f.close()
+
+#Prints the correct question
