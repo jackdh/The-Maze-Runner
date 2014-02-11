@@ -1,9 +1,4 @@
-import json
+position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (300, 60)], "D": ["D: ", (300, 120)]}
 
-with open('questions.json') as f:
-    questions = json.load(f)
-    question_number= questions[2] # 0 For getting first question answer set
-    print(question_number["question"])
-f.close()
 
-#Prints the correct question
+print(position["C"][1])
