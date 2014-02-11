@@ -1,5 +1,6 @@
 import pygame
 from questions import *
+import json
 
 """
 Global constants
@@ -103,20 +104,22 @@ class EndZone(pygame.sprite.Sprite):
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
         self.rect.y = y
-        self.rect.x = x
+        self.rect.x = x  
 
 def question(number):
 
-    questions = { 1: QuestionOne, 2: QuestionTwo}
-    question = questions[number]()
-    question_text = question.get_question()
-    answer_text = question.get_answer()
-    fake_one = question.get_fake_one()
-    fake_two = question.get_fake_two()
-    fake_three = question.get_fake_three()
+    with open('questions.json') as f:
+        questions = json.load(f)
+        q = questions[number]  # 0 For getting first question answer set
+        question_text = q["question"]
+        answer_text = q["answer"]
+        fake_one = q["fake1"]
+        fake_two = q["fake2"]
+        fake_three = q["fake3"]
+    f.close()
 
 
-    font = pygame.font.Font(None, 36)
+    font = pygame.font.Font(None, 20)
 
     #Questions
     text = font.render(question_text, 1, WHITE)
@@ -166,11 +169,6 @@ all_sprite_list = pygame.sprite.Group()
 wall_list = pygame.sprite.Group()
 
 end_zone_list = pygame.sprite.Group()
-
-text = "This is some text"
-font = pygame.font.Font(None, 25)
-text = font.render("Score: " + text, True, WHITE)
-screen.blit(text, [250, 250])
 
 # Map one walls
 walls_to_make = [(10, 300, 700, 10, WHITE),

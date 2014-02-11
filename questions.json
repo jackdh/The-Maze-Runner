@@ -1,0 +1,23 @@
+[
+    {
+        "question": "what is 2+2",
+        "answer": "4",
+        "fake1": "5",
+        "fake2": "I dunno eggs?",
+        "fake3": "What a stupid question"
+    },
+    {
+        "question": "what is the meaning of life?",
+        "answer": "pizza",
+        "fake1": "42",
+        "fake2": "ben is",
+        "fake 3": "What a stupid question"
+    },
+    {
+        "question": "How do you KNOW it's new and improved dog food?",
+        "answer": "Special dogs that can talk to humans",
+        "fake1": "Ben taste tests each batch,",
+        "fake2": "They use even fresher food",
+        "fake3": "What a stupid question"
+    }
+]
