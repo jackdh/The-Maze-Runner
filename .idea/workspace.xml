@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\dot.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\information.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\questions.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Snippets.py" afterPath="$PROJECT_DIR$/Snippets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="The Game.iws" />
@@ -19,8 +17,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/The Game$Prototype.coverage" NAME="Prototype Coverage Results" MODIFIED="1391974599003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1392157270475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$Prototype__1_.coverage" NAME="Prototype (1) Coverage Results" MODIFIED="1392158794753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1392160358278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$Prototype__1_.coverage" NAME="Prototype (1) Coverage Results" MODIFIED="1392161063288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$Snippets.coverage" NAME="Snippets Coverage Results" MODIFIED="1391908667951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$questions.coverage" NAME="questions Coverage Results" MODIFIED="1392059323627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1392059970966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,7 +38,7 @@
       <file leaf-file-name="Prototype.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Prototype.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="57" selection-start="388" selection-end="388" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="4420">
+            <state line="162" column="11" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.8095238" vertical-offset="2193" max-vertical-offset="4607">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -51,7 +49,7 @@
       <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
@@ -69,7 +67,7 @@
       <file leaf-file-name="Snippets.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Snippets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="94" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -86,24 +84,29 @@
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Snippets.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Snippets.py" />
         <option value="$PROJECT_DIR$/../Prototype.py" />
         <option value="$PROJECT_DIR$/prototype.py" />
         <option value="$PROJECT_DIR$/questions.py" />
         <option value="$PROJECT_DIR$/questions.txt" />
         <option value="$PROJECT_DIR$/questions.json" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/question_code.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Snippets.py" />
         <option value="$PROJECT_DIR$/Prototype.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="7" />
+    <option name="y" value="20" />
     <option name="width" value="1367" />
-    <option name="height" value="1040" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -238,25 +241,6 @@
       <module name="The Game" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Snippets.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Prototype (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -454,20 +438,38 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="Prototype (1)" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="The Game" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.prototype" />
       <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.questions" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Prototype" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Snippets" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Prototype (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Prototype (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.questions" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Prototype" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Snippets" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Prototype (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.questions" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Prototype" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Snippets" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.questions" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Prototype" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Snippets" />
       </list>
     </recent_temporary>
   </component>
@@ -502,16 +504,20 @@
       <created>1392158819799</created>
       <updated>1392158819799</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cleaned up useless files.">
+      <created>1392158921051</created>
+      <updated>1392158921051</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1367" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="7" y="20" width="1367" height="980" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804877" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23713647" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -521,7 +527,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29459658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17773019" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17734554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -548,7 +554,8 @@
     <MESSAGE value="Semi setup, walls and fake endzone made." />
     <MESSAGE value="Questions working" />
     <MESSAGE value="Simplified question creation and wall creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified question creation and wall creation" />
+    <MESSAGE value="Cleaned up useless files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up useless files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -614,21 +621,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Snippets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="94" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="388" selection-end="388" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="4420">
+        <state line="162" column="11" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.8095238" vertical-offset="2193" max-vertical-offset="4607">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

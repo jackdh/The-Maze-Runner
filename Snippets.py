@@ -12,3 +12,15 @@ How to print text to the screen.
 jack = [(1,2,3),(4,5,6)]
 
 print(jack[0][1])
+
+
+"""
+import random
+letters = ["A", "B", "C", "D"]
+random.shuffle(letters)
+numbers = [1, 2, 3, 4]
+dic = dict(zip(numbers, letters))
+print(dic)
+
+
+"""

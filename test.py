@@ -1,4 +1,6 @@
-position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (300, 60)], "D": ["D: ", (300, 120)]}
-
-
-print(position["C"][1])
+import random
+letters = ["A", "B", "C", "D"]
+random.shuffle(letters)
+numbers = [1, 2, 3, 4]
+dic = dict(zip(numbers, letters))
+print(dic)

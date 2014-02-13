@@ -1,6 +1,6 @@
 import pygame
-from questions import *
 import json
+import random
 
 """
 Global constants
@@ -11,10 +11,11 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 GREEN = (124, 252, 0)
-RED = ( 255, 0, 0)
+RED = (255, 0, 0)
 # Screen dimensions
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
+
 
 # This class represents the bar at the bottom that the player controls
 class Player(pygame.sprite.Sprite):
@@ -104,9 +105,12 @@ class EndZone(pygame.sprite.Sprite):
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
         self.rect.y = y
-        self.rect.x = x  
+        self.rect.x = x
+
 
 def question(number):
+    question_area = pygame.Surface(screen.get_size())
+    question_area.fill((0,0,0))
 
     with open('questions.json') as f:
         questions = json.load(f)
@@ -118,37 +122,42 @@ def question(number):
         fake_three = q["fake3"]
     f.close()
 
+    """ This is used to position the questions """
+    position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (300, 60)], "D": ["D: ", (300, 120)]}
+
+    def position_text(letter, render_text):
+        text = font.render(position[letter][0]+render_text, 1, WHITE)
+        textpos = text.get_rect()
+        textpos.topleft = (position[letter][1])
+        screen.blit(text, textpos)
+
+    def position_question():
+        text = font.render(question_text, 1, WHITE)
+        textpos = text.get_rect()
+        textpos.centerx = screen.get_rect().centerx
+        textpos.centery = 30
+        screen.blit(text, textpos)
 
     font = pygame.font.Font(None, 20)
-
     #Questions
-    text = font.render(question_text, 1, WHITE)
-    textpos = text.get_rect()
-    textpos.centerx = screen.get_rect().centerx
-    textpos.centery = 30
-    screen.blit(text, textpos)
 
-    text = font.render("A: "+ answer_text, 1, WHITE)
-    textpos = text.get_rect()
-    textpos.topleft = (30,60)
-    screen.blit(text, textpos)
+    position_question()
+    letters = ["A", "B", "C", "D"]
+    random.shuffle(letters)
+    numbers = [1, 2, 3, 4]
+    get_letter = dict(zip(numbers, letters))
 
-    text = font.render("B: "+ fake_one, 1, WHITE)
-    textpos = text.get_rect()
-    textpos.topleft = (30,120)
-    screen.blit(text, textpos)
+    position_text(get_letter[1], answer_text)
 
-    text = font.render("C: "+ fake_two, 1, WHITE)
-    textpos = text.get_rect()
-    textpos.topleft = (300,60)
-    screen.blit(text, textpos)
+    position_text(get_letter[2], fake_one)
 
-    text = font.render("D: "+ fake_three, 1, WHITE)
-    textpos = text.get_rect()
-    textpos.topleft = (300,120)
-    screen.blit(text, textpos)
+    position_text(get_letter[3], fake_two)
+
+    position_text(get_letter[4], fake_three)
 
 
+
+### WORKING HERE ON MAKING THE QUESTIONS RANDOMISE.
 
 
 
@@ -157,7 +166,7 @@ def question(number):
 pygame.init()
 
 # Create an 800x600 sized screen
-screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
+screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT], pygame.RESIZABLE)
 
 # Set the title of the window
 pygame.display.set_caption('Prototype')
@@ -170,29 +179,28 @@ wall_list = pygame.sprite.Group()
 
 end_zone_list = pygame.sprite.Group()
 
-# Map one walls
+def make_walls(list):
+
+    for i in range(len(list)):
+        wall = Wall(*list[i])
+        wall_list.add(wall)
+        all_sprite_list.add(wall)
+
 walls_to_make = [(10, 300, 700, 10, WHITE),
                  (150, 450, 10, 340, WHITE),
                  (300, 450, 10, 340, WHITE),
                  (450, 450, 10, 340, WHITE),
                  (600, 450, 10, 340, WHITE),
                  ]
-for i in range(len(walls_to_make)):
-    wall = Wall(*walls_to_make[i])
 
-    wall_list.add(wall)
-    all_sprite_list.add(wall)
+four_sides = [(0, 200, 10, 600, BLUE),
+              (10, 200, 790, 10, BLUE),
+              (0, 790, 800, 10, BLUE),
+              (790, 200, 10, 600, BLUE)
+              ]
 
-# Loop to create the side walls.
-walls_to_make = [(0, 200, 10, 600, BLUE),
-                 (10, 200, 790, 10, BLUE),
-                 (0, 790, 800, 10, BLUE),
-                 (790, 200, 10, 600, BLUE)]
-
-for i in range(4):
-    wall = Wall(*walls_to_make[i])
-    wall_list.add(wall)
-    all_sprite_list.add(wall)
+make_walls(walls_to_make)
+make_walls(four_sides)
 
 
 EndZone_to_make = [(70, 720), (220, 720), (370, 720)]
