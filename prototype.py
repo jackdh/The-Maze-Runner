@@ -109,9 +109,9 @@ class EndZone(pygame.sprite.Sprite):
 
 
 def question(number):
-    question_area = pygame.Surface(screen.get_size())
-    question_area.fill((0,0,0))
 
+    # this will open the JSON file, store all the info as list items [x,y,z] in questions,
+    # q will then get question that is past to it
     with open('questions.json') as f:
         questions = json.load(f)
         q = questions[number]  # 0 For getting first question answer set
@@ -122,15 +122,17 @@ def question(number):
         fake_three = q["fake3"]
     f.close()
 
-    """ This is used to position the questions """
+    # This is used to position the questions
     position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (300, 60)], "D": ["D: ", (300, 120)]}
 
+    #This positions the answers.
     def position_text(letter, render_text):
         text = font.render(position[letter][0]+render_text, 1, WHITE)
         textpos = text.get_rect()
         textpos.topleft = (position[letter][1])
         screen.blit(text, textpos)
 
+    # This positions the questions.
     def position_question():
         text = font.render(question_text, 1, WHITE)
         textpos = text.get_rect()
@@ -138,26 +140,22 @@ def question(number):
         textpos.centery = 30
         screen.blit(text, textpos)
 
-    font = pygame.font.Font(None, 20)
+    font = pygame.font.Font(None, 20) # Load font and font size
     #Questions
 
-    position_question()
+    position_question()  # As the question will be place in same place every time no need for randomisation
     letters = ["A", "B", "C", "D"]
-    random.shuffle(letters)
-    numbers = [1, 2, 3, 4]
-    get_letter = dict(zip(numbers, letters))
+    random.shuffle(letters)  # This makes shuffles the letters so the answers will land on separate questions
+    numbers = [1, 2, 3, 4]  # These are used to make the dictionary and will link with the randomised letters
+    get_letter = dict(zip(numbers, letters))  # Make the dictionary
 
-    position_text(get_letter[1], answer_text)
+    position_text(get_letter[1], answer_text)  # Print answer to the screen
 
     position_text(get_letter[2], fake_one)
 
     position_text(get_letter[3], fake_two)
 
     position_text(get_letter[4], fake_three)
-
-
-
-### WORKING HERE ON MAKING THE QUESTIONS RANDOMISE.
 
 
 
@@ -178,6 +176,8 @@ all_sprite_list = pygame.sprite.Group()
 wall_list = pygame.sprite.Group()
 
 end_zone_list = pygame.sprite.Group()
+
+end_zone_answer = pygame.sprite.Group()
 
 def make_walls(list):
 
@@ -218,7 +218,7 @@ all_sprite_list.add(player)
 clock = pygame.time.Clock()
 
 done = False
-
+x = 1
 while not done:
 
     for event in pygame.event.get():
@@ -252,6 +252,8 @@ while not done:
     screen.fill(BLACK)
 
     question(2)
+
+
 
     all_sprite_list.draw(screen)
 
