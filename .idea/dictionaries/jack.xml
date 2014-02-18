@@ -4,6 +4,7 @@
       <w>centerx</w>
       <w>centery</w>
       <w>changespeed</w>
+      <w>endzone</w>
       <w>textpos</w>
       <w>topleft</w>
     </words>

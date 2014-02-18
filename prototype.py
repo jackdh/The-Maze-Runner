@@ -24,7 +24,6 @@ class Player(pygame.sprite.Sprite):
     # Set speed vector
     change_x = 0
     change_y = 0
-    walls = None
 
     # Constructor function
     def __init__(self, start_y, start_x):
@@ -68,6 +67,10 @@ class Player(pygame.sprite.Sprite):
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
 
+        block_win_list = pygame.sprite.spritecollide(self, self.end_zone_answer, True)
+        for block in block_win_list:
+            pygame.quit()
+
 
 class Wall(pygame.sprite.Sprite):
     """ Wall the player can run into. """
@@ -91,14 +94,14 @@ class Wall(pygame.sprite.Sprite):
 
 class EndZone(pygame.sprite.Sprite):
 
-    def __init__(self, x, y,):
+    def __init__(self, x, y, color):
         """ Constructor for the Endzone """
 
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
 
         self.image = pygame.Surface([15, 15])
-        self.image.fill(GREEN)
+        self.image.fill(color)
 
         # Make a green box
 
@@ -179,6 +182,18 @@ end_zone_list = pygame.sprite.Group()
 
 end_zone_answer = pygame.sprite.Group()
 
+
+EndZone_to_make = [(70, 720, GREEN), (220, 720, GREEN), (370, 720, GREEN)]
+for i in range(len(EndZone_to_make)):
+    end_zone = EndZone(*EndZone_to_make[i])
+    wall_list.add(end_zone)
+    all_sprite_list.add(end_zone)
+
+EndZone_to_make_answer = EndZone(520, 720, WHITE)
+
+all_sprite_list.add(EndZone_to_make_answer)
+end_zone_answer.add(EndZone_to_make_answer)
+
 def make_walls(list):
 
     for i in range(len(list)):
@@ -203,15 +218,11 @@ make_walls(walls_to_make)
 make_walls(four_sides)
 
 
-EndZone_to_make = [(70, 720), (220, 720), (370, 720)]
-for i in range(len(EndZone_to_make)):
-    end_zone = EndZone(*EndZone_to_make[i])
-    wall_list.add(end_zone)
-    all_sprite_list.add(end_zone)
 
 # Create the player paddle object
 player = Player(250, 50)
 player.walls = wall_list
+player.end_zone_answer = end_zone_answer
 all_sprite_list.add(player)
 
 
