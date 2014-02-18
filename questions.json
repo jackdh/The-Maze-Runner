@@ -1,17 +1,17 @@
 [
     {
-        "question": "what is 2+2",
-        "answer": "4",
-        "fake1": "5",
-        "fake2": "I dunno eggs?",
-        "fake3": "What a stupid question"
+        "question": "what background knowledge do you need to have to study computing at uni?",
+        "answer": "None",
+        "fake1": "A-levels",
+        "fake2": "Gcse's",
+        "fake3": "work related application"
     },
     {
         "question": "what is the meaning of life?",
         "answer": "pizza",
         "fake1": "42",
         "fake2": "ben is",
-        "fake 3": "What a stupid question"
+        "fake3": "What a stupid question"
     },
     {
         "question": "How do you KNOW it's new and improved dog food?",
