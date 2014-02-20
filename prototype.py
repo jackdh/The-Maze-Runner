@@ -77,8 +77,16 @@ class Player(pygame.sprite.Sprite):
 
         block_win_list = pygame.sprite.spritecollide(self, self.end_zone_answer, False)
         for block in block_win_list:
-            current_room_no = 1
+            self.rect.y = self.reset_position_y
+            self.rect.x = self.reset_position_x
+            global current_question_no
+            current_question_no = 1
 
+    def check_win(self):
+        if pygame.sprite.spritecollide(self, self.end_zone_answer, False):
+            return True
+        else:
+            return False
 
 class Wall(pygame.sprite.Sprite):
     """ Wall the player can run into. """
@@ -237,8 +245,14 @@ def main():
     current_room_no = 0
     current_room = rooms[current_room_no]
 
+    questions = []
+    question = Question(0)
+    questions.append(question)
+    question = Question(1)
+    questions.append(question)
+
+    global current_question_no
     current_question_no = 0
-    current_question = Question(current_question_no)
 
     EndZone_to_make = [(70, 720, GREEN), (220, 720, GREEN), (370, 720, GREEN)]
     for i in range(len(EndZone_to_make)):
@@ -252,17 +266,14 @@ def main():
     end_zone_answer.add(EndZone_to_make_answer)
 
     # Create the player paddle object
-    player = Player(250, 50)
+    player = Player(520, 520)
     player.walls = current_room.wall_list
     player.end_zone_answer = end_zone_answer
     all_sprite_list.add(player)
 
-
-
     clock = pygame.time.Clock()
 
     done = False
-    x = 1
     while not done:
 
         for event in pygame.event.get():
@@ -293,7 +304,7 @@ def main():
 
         screen.fill(BLACK)
 
-        current_question.print_question()
+        questions[current_question_no].print_question()
 
         all_sprite_list.update()
 
