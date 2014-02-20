@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" />
+      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\Snippets.py" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\test.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype.py" afterPath="$PROJECT_DIR$/prototype.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions.json" afterPath="$PROJECT_DIR$/questions.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="The Game.iws" />
@@ -16,11 +19,11 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/The Game$Prototype.coverage" NAME="Prototype Coverage Results" MODIFIED="1391974599003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1392160358278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1392820362980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$Prototype__1_.coverage" NAME="Prototype (1) Coverage Results" MODIFIED="1392740983698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$questions.coverage" NAME="questions Coverage Results" MODIFIED="1392059323627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$Snippets.coverage" NAME="Snippets Coverage Results" MODIFIED="1391908667951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1392059970966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1392931649494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Prototype.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Prototype.py">
+      <file leaf-file-name="prototype.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prototype.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.82852566" vertical-offset="724" max-vertical-offset="4777">
+            <state line="16" column="19" selection-start="235" selection-end="235" vertical-scroll-proportion="-2.2966225" vertical-offset="1836" max-vertical-offset="5406">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -45,28 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="questions.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Snippets.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Snippets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
+            <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -83,27 +68,26 @@
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Snippets.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/../Prototype.py" />
-        <option value="$PROJECT_DIR$/prototype.py" />
         <option value="$PROJECT_DIR$/questions.py" />
         <option value="$PROJECT_DIR$/questions.txt" />
-        <option value="$PROJECT_DIR$/questions.json" />
         <option value="$PROJECT_DIR$/question_code.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Snippets.py" />
         <option value="$PROJECT_DIR$/Prototype.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/prototype.py" />
+        <option value="$PROJECT_DIR$/questions.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1012" />
-    <option name="height" value="1040" />
+    <option name="x" value="65" />
+    <option name="y" value="2" />
+    <option name="width" value="1342" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -131,7 +115,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,6 +135,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,13 +163,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="802" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.Prototype (1)">
+  <component name="RunManager" selected="Python.prototype">
     <configuration default="false" name="questions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -528,7 +513,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1012" height="1040" extended-state="0" />
+    <frame x="65" y="2" width="1342" height="1039" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -536,20 +521,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19879518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18401207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24842106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23713647" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901499" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24222937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -577,19 +562,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state line="31" column="1" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="629">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
+        <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4760">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -600,26 +585,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="4590">
+        <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="4086" max-vertical-offset="4760">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
+        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4794">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="4590">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,26 +649,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="23" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,14 +665,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2083" max-vertical-offset="4590">
           <folding>
@@ -676,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="476">
@@ -690,14 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2049" max-vertical-offset="4590">
           <folding>
@@ -706,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="476">
@@ -720,14 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2015" max-vertical-offset="4590">
           <folding>
@@ -736,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
@@ -750,14 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="11" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="4607">
           <folding>
@@ -766,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
@@ -780,14 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="0" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4454">
           <folding>
@@ -796,58 +738,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="94" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snippets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.82852566" vertical-offset="724" max-vertical-offset="4777">
+        <state line="16" column="19" selection-start="235" selection-end="235" vertical-scroll-proportion="-2.2966225" vertical-offset="1836" max-vertical-offset="5406">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
