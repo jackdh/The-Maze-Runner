@@ -1,0 +1,1 @@
+After 30 seconds (or some time), spawn a monster that moves through walls and chases the player. If the player is hit, move back to start (add a death) and put the monster back to the start.
