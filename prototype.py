@@ -13,8 +13,8 @@ BLUE = (0, 0, 255)
 GREEN = (124, 252, 0)
 RED = (255, 0, 0)
 # Screen dimensions
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 800
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 600
 
 pygame.init()
 
@@ -142,7 +142,7 @@ class Question:
             self.fake_three = q["fake3"]
         f.close()
 
-        self.position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (300, 60)], "D": ["D: ", (300, 120)]}
+        self.position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (200, 60)], "D": ["D: ", (200, 120)]}
 
         self.font = pygame.font.Font(None, 20)
 
@@ -185,10 +185,10 @@ class Map():
     def __init__(self):
         self.wall_list = pygame.sprite.Group()
 
-        four_sides = [(0, 200, 10, 600, BLUE),
-              (10, 200, 790, 10, BLUE),
-              (0, 790, 800, 10, BLUE),
-              (790, 200, 10, 600, BLUE)
+        four_sides = [(0, 150, 10, 600, BLUE),
+              (10, 150, 580, 10, BLUE),
+              (0, 590, 600, 10, BLUE),
+              (590, 150, 10, 600, BLUE)
               ]
 
         for item in four_sides:
@@ -200,11 +200,11 @@ class Map1(Map):
     def __init__(self):
         Map.__init__(self)
 
-        walls_to_make = [(10, 300, 700, 10, WHITE),
-             (150, 450, 10, 340, WHITE),
-             (300, 450, 10, 340, WHITE),
-             (450, 450, 10, 340, WHITE),
-             (600, 450, 10, 340, WHITE),
+        walls_to_make = [(10, 250, 450, 10, WHITE),
+             (150, 350, 10, 175, WHITE),
+             (300, 350, 10, 175, WHITE),
+             (450, 350, 10, 175, WHITE),
+             (600, 350, 10, 175, WHITE),
              ]
 
         for item in walls_to_make:
@@ -217,8 +217,8 @@ class Map2(Map):
         Map.__init__(self)
 
         walls_to_make = [(10, 300, 700, 10, WHITE),
-                        (150, 450, 10, 340, WHITE),
-                        ]
+                         (150, 450, 10, 340, WHITE),
+                         ]
 
         for item in walls_to_make:
             wall = Wall(item[0], item[1], item[2], item[3], item[4])
@@ -254,19 +254,19 @@ def main():
     global current_question_no
     current_question_no = 0
 
-    EndZone_to_make = [(70, 720, GREEN), (220, 720, GREEN), (370, 720, GREEN)]
+    EndZone_to_make = [(70, 450, GREEN), (220, 450, GREEN), (370, 450, GREEN)]
     for i in range(len(EndZone_to_make)):
         end_zone = EndZone(*EndZone_to_make[i])
         current_room.wall_list.add(end_zone)
         all_sprite_list.add(end_zone)
 
-    EndZone_to_make_answer = EndZone(520, 720, WHITE)
+    EndZone_to_make_answer = EndZone(520, 450, WHITE)
 
     all_sprite_list.add(EndZone_to_make_answer)
     end_zone_answer.add(EndZone_to_make_answer)
 
     # Create the player paddle object
-    player = Player(520, 520)
+    player = Player(200, 70)
     player.walls = current_room.wall_list
     player.end_zone_answer = end_zone_answer
     all_sprite_list.add(player)
