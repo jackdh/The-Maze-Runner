@@ -50,6 +50,8 @@ class Player(pygame.sprite.Sprite):
         self.rect.y = self.reset_position_y
         self.rect.x = self.reset_position_x
 
+        self.deaths = 0
+
     def changespeed(self, x, y):
         """ Change the speed of the player. """
         self.change_x += x
@@ -72,21 +74,23 @@ class Player(pygame.sprite.Sprite):
         # Check and see if we hit anything
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
+            self.deaths += 1
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
 
         block_win_list = pygame.sprite.spritecollide(self, self.end_zone_answer, False)
         for block in block_win_list:
+            self.deaths += 1
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
             global current_question_no
-            current_question_no = 1
+            current_question_no += 1
 
-    def check_win(self):
-        if pygame.sprite.spritecollide(self, self.end_zone_answer, False):
-            return True
-        else:
-            return False
+    def death_counter(self):
+        font = pygame.font.Font(None, 20)
+        text = font.render("deaths: "+str(self.deaths), 1, WHITE)
+        textpos = (500, 110)
+        screen.blit(text, textpos)
 
 class Wall(pygame.sprite.Sprite):
     """ Wall the player can run into. """
@@ -142,7 +146,7 @@ class Question:
             self.fake_three = q["fake3"]
         f.close()
 
-        self.position = {"A": ["A: ", (30, 60)], "B": ["B: ", (30, 120)], "C": ["C: ", (200, 60)], "D": ["D: ", (200, 120)]}
+        self.position = {"A": ["A: ", (30, 50)], "B": ["B: ", (30, 70)], "C": ["C: ", (30, 90)], "D": ["D: ", (30, 110)]}
 
         self.font = pygame.font.Font(None, 20)
 
@@ -250,6 +254,10 @@ def main():
     questions.append(question)
     question = Question(1)
     questions.append(question)
+    question = Question(2)
+    questions.append(question)
+    question = Question(3)
+    questions.append(question)
 
     global current_question_no
     current_question_no = 0
@@ -305,6 +313,8 @@ def main():
         screen.fill(BLACK)
 
         questions[current_question_no].print_question()
+
+        player.death_counter()
 
         all_sprite_list.update()
 
