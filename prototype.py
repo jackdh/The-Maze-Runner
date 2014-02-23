@@ -51,6 +51,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.x = self.reset_position_x
 
         self.deaths = 0
+        self.answered = 0
 
     def changespeed(self, x, y):
         """ Change the speed of the player. """
@@ -65,6 +66,7 @@ class Player(pygame.sprite.Sprite):
         # Did this update cause us to hit a wall?
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
+            self.deaths += 1
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
 
@@ -80,7 +82,7 @@ class Player(pygame.sprite.Sprite):
 
         block_win_list = pygame.sprite.spritecollide(self, self.end_zone_answer, False)
         for block in block_win_list:
-            self.deaths += 1
+            self.answered += 1
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
             global current_question_no
@@ -90,6 +92,12 @@ class Player(pygame.sprite.Sprite):
         font = pygame.font.Font(None, 20)
         text = font.render("deaths: "+str(self.deaths), 1, WHITE)
         textpos = (500, 110)
+        screen.blit(text, textpos)
+
+    def questions_answered(self):
+        font = pygame.font.Font(None, 20)
+        text = font.render("Answered: "+str(self.answered), 1, WHITE)
+        textpos = (500, 90)
         screen.blit(text, textpos)
 
 class Wall(pygame.sprite.Sprite):
@@ -315,6 +323,8 @@ def main():
         questions[current_question_no].print_question()
 
         player.death_counter()
+        player.questions_answered()
+
 
         all_sprite_list.update()
 
