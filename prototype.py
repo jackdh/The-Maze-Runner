@@ -80,16 +80,19 @@ class Player(pygame.sprite.Sprite):
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
 
-        block_win_list = pygame.sprite.spritecollide(self, self.end_zone_answer, False)
-        for block in block_win_list:
+        if pygame.sprite.spritecollide(self, self.end_zone_answer, False):
             self.answered += 1
             self.rect.y = self.reset_position_y
             self.rect.x = self.reset_position_x
+            global current_room_no
+
+            if current_room_no == 2:
+                current_room_no = 0
+            else:
+                current_room_no += 1
+
             global current_question_no
             current_question_no += 1
-            global current_room_no
-            current_room_no += 1
-            print(current_room_no)
 
     def death_counter(self):
         font = pygame.font.Font(None, 20)
@@ -150,6 +153,9 @@ class EndZone(pygame.sprite.Sprite):
 
 class Question:
     def __init__(self, number):
+
+        self.answer_letter = ""
+
         self.question_list = []
         self.number = number
 
@@ -194,12 +200,20 @@ class Question:
             screen.blit(i[0], i[1])
 
     def make_answer(self):
-        letter = self.letters.pop(random.randint(0,len(self.letters)-1))
-        self.position_text(letter, self.answer_text)
+        letter = self.letters.pop(random.randint(0, len(self.letters)-1))  # Get a random letter and remove it
+        self.position_text(letter, self.answer_text)  # Give it to position text to store in the list
+        self.answer_letter = letter
+
+    def get_answer(self):
+        print(self.answer_letter)
+        return self.answer_letter
 
     def make_fake(self, number):
-        letter = self.letters.pop(random.randint(0,len(self.letters)-1))
+        letter = self.letters.pop(random.randint(0, len(self.letters)-1))
         self.position_text(letter, self.list_fake_questions[number])
+
+    def get_question_number(self):
+        return self.number
 
 
 
@@ -219,6 +233,25 @@ class Map():
             wall = Wall(item[0], item[1], item[2], item[3], item[4])
             self.wall_list.add(wall)
 
+        self.letters = ["a", "b", "c", "d"]
+
+
+
+        self.answer_letter = questions[0].get_answer()  # Currently working here
+        self.letters.pop(self.letters.index(self.answer_letter))
+        random.shuffle(self.letters)
+
+        self.fake1 = self.letters.pop()
+        self.fake2 = self.letters.pop()
+        self.fake3 = self.letters.pop()
+
+    def make_endzones(self, possible_endzones):
+        random.shuffle(possible_endzones)
+        one = possible_endzones.pop()
+        two = possible_endzones.pop()
+        three = possible_endzones.pop()
+        return [(one[0], one[1], self.fake1), (two[0], two[1], self.fake2), (three[0], three[1], self.fake3)]
+
 
 class Map1(Map):
     def __init__(self):
@@ -235,11 +268,18 @@ class Map1(Map):
             wall = Wall(item[0], item[1], item[2], item[3], item[4])
             self.wall_list.add(wall)
 
-        EndZone_to_make = [(70, 450, "a"), (220, 450, "b"), (370, 450, "c")]
+        possible_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)] #edit this
+
+        EndZone_to_make = self.make_endzones(possible_endzones)
+        four = possible_endzones.pop()
 
         for i in range(len(EndZone_to_make)):
             end_zone = EndZone(*EndZone_to_make[i])
             self.wall_list.add(end_zone)
+
+        answer_zone = EndZone(four[0], four[1], self.answer_letter)
+
+        end_zone_answer.add(answer_zone)
 
 
 class Map2(Map):
@@ -252,11 +292,44 @@ class Map2(Map):
             wall = Wall(item[0], item[1], item[2], item[3], item[4])
             self.wall_list.add(wall)
 
-        EndZone_to_make = [(70, 450, "a"), (220, 450, "b"), (370, 450, "c")]
+        possible_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)] #edit this
+
+        EndZone_to_make = self.make_endzones(possible_endzones)
+        four = possible_endzones.pop()
 
         for i in range(len(EndZone_to_make)):
             end_zone = EndZone(*EndZone_to_make[i])
             self.wall_list.add(end_zone)
+
+        answer_zone = EndZone(four[0], four[1], self.answer_letter)
+
+        end_zone_answer.add(answer_zone)
+
+class Map3(Map):
+    def __init__(self):
+        Map.__init__(self)
+
+        walls_to_make = [(450, 350, 10, 175, WHITE),
+                         (600, 350, 10, 175, WHITE),
+                         ]
+
+        for item in walls_to_make:
+            wall = Wall(item[0], item[1], item[2], item[3], item[4])
+            self.wall_list.add(wall)
+
+        possible_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]  # edit this
+
+        EndZone_to_make = self.make_endzones(possible_endzones)
+        four = possible_endzones.pop()
+
+        for i in range(len(EndZone_to_make)):
+            end_zone = EndZone(*EndZone_to_make[i])
+            self.wall_list.add(end_zone)
+
+        answer_zone = EndZone(four[0], four[1], self.answer_letter)
+
+        end_zone_answer.add(answer_zone)
+
 
 
 
@@ -272,17 +345,7 @@ end_zone_list = pygame.sprite.Group()
 
 end_zone_answer = pygame.sprite.Group()
 
-rooms = []
-
-room = Map1()
-rooms.append(room)
-
-room = Map2()
-rooms.append(room)
-
-current_room_no = 0
-current_room = rooms[current_room_no]
-
+global questions
 questions = []
 
 question = Question(0)
@@ -299,9 +362,21 @@ questions.append(question)
 
 current_question_no = 0
 
-answer_zone = EndZone(520, 450, "b")
 
-end_zone_answer.add(answer_zone)
+rooms = []
+
+room = Map1()
+rooms.append(room)
+
+room = Map2()
+rooms.append(room)
+
+room = Map3()
+rooms.append(room)
+
+
+current_room_no = 0
+current_room = rooms[current_room_no]
 
 # Create the player paddle object
 player = Player(200, 70)
@@ -354,12 +429,13 @@ while not done:
 
     player_list.draw(screen)
 
-    player.walls = rooms[current_room_no].wall_list
+
 
     end_zone_answer.draw(screen)
 
     rooms[current_room_no].wall_list.update()
     rooms[current_room_no].wall_list.draw(screen)
+    player.walls = rooms[current_room_no].wall_list
 
     pygame.display.flip()
 
