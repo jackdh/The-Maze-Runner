@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype.py" afterPath="$PROJECT_DIR$/prototype.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions.json" afterPath="$PROJECT_DIR$/questions.json" />
+    </list>
+    <list id="931f01aa-e3b1-4ef8-8e30-33f7678e854b" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="The Game.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/test.py" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +22,11 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/The Game$Prototype.coverage" NAME="Prototype Coverage Results" MODIFIED="1391974599003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1392820362980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1393521082600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$Prototype__1_.coverage" NAME="Prototype (1) Coverage Results" MODIFIED="1392740983698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$questions.coverage" NAME="questions Coverage Results" MODIFIED="1392059323627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The Game$Snippets.coverage" NAME="Snippets Coverage Results" MODIFIED="1391908667951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1393199814402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1393531390545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,10 +43,11 @@
       <file leaf-file-name="prototype.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prototype.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="325" column="35" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.41140217" vertical-offset="4969" max-vertical-offset="5661">
+            <state line="337" column="0" selection-start="10260" selection-end="10260" vertical-scroll-proportion="0.7481203" vertical-offset="2968" max-vertical-offset="4709">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#765#1266#0" expanded="false" />
+                <element signature="e#551#3024#0" expanded="false" />
+                <element signature="e#4491#6591#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,7 +56,16 @@
       <file leaf-file-name="questions.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="629">
+            <state line="34" column="19" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-17.5" vertical-offset="123" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -75,15 +92,17 @@
         <option value="$PROJECT_DIR$/Snippets.py" />
         <option value="$PROJECT_DIR$/Prototype.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$USER_HOME$/.PyCharm30/system/python_stubs/-1571908645/builtins.py" />
         <option value="$PROJECT_DIR$/questions.json" />
         <option value="$PROJECT_DIR$/prototype.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="3" />
-    <option name="width" value="1122" />
-    <option name="height" value="1031" />
+    <option name="x" value="-6" />
+    <option name="y" value="45" />
+    <option name="width" value="1223" />
+    <option name="height" value="939" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -308,9 +327,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -332,6 +348,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -474,6 +493,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="" />
+      <changelist id="931f01aa-e3b1-4ef8-8e30-33f7678e854b" name="New changelist" comment="" />
       <created>1391893843707</created>
       <updated>1391893843707</updated>
     </task>
@@ -505,11 +525,19 @@
       <created>1392158921051</created>
       <updated>1392158921051</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="No more invisable walls!">
+      <created>1393439257510</created>
+      <updated>1393439257510</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic">
+      <created>1393454157035</created>
+      <updated>1393454157035</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="3" width="1122" height="1031" extended-state="0" />
+    <frame x="-6" y="45" width="1223" height="939" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -517,11 +545,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.056057867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24842106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11350456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24770643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23713647" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24216217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23623854" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33013207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,18 +580,134 @@
     <MESSAGE value="Questions working" />
     <MESSAGE value="Simplified question creation and wall creation" />
     <MESSAGE value="Cleaned up useless files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up useless files." />
+    <MESSAGE value="No more invisable walls!" />
+    <MESSAGE value="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="375" column="0" selection-start="10760" selection-end="10760" vertical-scroll-proportion="0.0" vertical-offset="5801" max-vertical-offset="7701">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="80" selection-start="7137" selection-end="7137" vertical-scroll-proportion="0.0" vertical-offset="3732" max-vertical-offset="7701">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="40" selection-start="7402" selection-end="7402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5287">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="41" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="778" max-vertical-offset="5950">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="325" column="35" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.0" vertical-offset="5491" max-vertical-offset="5661">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="36" selection-start="6031" selection-end="6031" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="5610">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,7 +724,8 @@
         <state line="306" column="30" selection-start="9197" selection-end="9197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,7 +749,8 @@
         <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4760">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -621,7 +767,8 @@
         <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="4086" max-vertical-offset="4760">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +785,8 @@
         <state line="73" column="0" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4794">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -655,7 +803,8 @@
         <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,7 +821,8 @@
         <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -689,7 +839,8 @@
         <state line="87" column="23" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,7 +857,8 @@
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2083" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,7 +875,8 @@
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2049" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,7 +893,8 @@
         <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2015" max-vertical-offset="4590">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -757,7 +911,8 @@
         <state line="162" column="11" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="4607">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,24 +929,40 @@
         <state line="136" column="0" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4454">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-1571908645/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3520" column="8" selection-start="122247" selection-end="122247" vertical-scroll-proportion="0.33226323" vertical-offset="59633" max-vertical-offset="95574">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/questions.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="629">
+        <state line="34" column="19" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-17.5" vertical-offset="123" max-vertical-offset="748">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="35" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.41140217" vertical-offset="4969" max-vertical-offset="5661">
+        <state line="337" column="0" selection-start="10260" selection-end="10260" vertical-scroll-proportion="0.7481203" vertical-offset="2968" max-vertical-offset="4709">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#765#1266#0" expanded="false" />
+            <element signature="e#551#3024#0" expanded="false" />
+            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>

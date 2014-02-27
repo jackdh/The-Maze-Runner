@@ -26,6 +26,13 @@
         "fake1": "civilian computing technology",
         "fake2": "computers connected technology",
         "fake3": "nothing"
+    },
+    {
+        "question": "This is the 4th question",
+        "answer": "4",
+        "fake1": "1",
+        "fake2": "2",
+        "fake3": "3"
     }
 	
 	
