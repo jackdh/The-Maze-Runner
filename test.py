@@ -1,22 +1,29 @@
 import random
 
-position = {"a": ["A: ", (30, 50)], "b": ["B: ", (30, 70)], "c": ["C: ", (30, 90)], "d": ["D: ", (30, 110)]}
 
-question_text = "question"
-answer_text = "answer"
-fake_one = "fake1"
-fake_two = "fake2"
-fake_three = "fake3"
+class Map1:
+     def __init__(self, number):
+         self.number = number
 
-list_questions = [answer_text, fake_one, fake_two, fake_three]
+class Map2:
+     def __init__(self, number):
+         self.number = number
 
-letters = ["A", "B", "C", "D"]
-random.shuffle(letters)
+class Map3:
+     def __init__(self, number):
+         self.number = number
 
+rooms = []
 
-get_letter = dict(zip(list_questions, letters))  # Make the dictionary
+room = Map1(1)
+rooms.append(room)
+                        # How it is done.
+room = Map2(1)
+rooms.append(room)
 
-#print(position["a"][1])
+room = Map3(1)
+rooms.append(room)
 
-print(letters.pop())
-print(letters)
+for i in range(1, 4):
+    room = Map[i](1)      # How I would like it if possible.
+    rooms.append(room)
