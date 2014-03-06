@@ -144,7 +144,6 @@ class EndZone(pygame.sprite.Sprite):
         elif self.letter == "d":
             self.image = pygame.image.load("d.jpg").convert()
             print("Endzone called! d")
-
         pygame.sprite.Sprite.__init__(self)
         # Make a green box
 
@@ -270,10 +269,6 @@ class Map():
         for i in range(len(EndZone_to_make)):
             end_zone = EndZone(*EndZone_to_make[i])
             self.wall_list.add(end_zone)
-
-
-
-
         # currently made all the maps into one. Now add a question variable.
         # Then create the loop to make the endzone
         # Make sure they are displaying
