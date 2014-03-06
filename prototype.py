@@ -132,8 +132,6 @@ class EndZone(pygame.sprite.Sprite):
         """ Constructor for the Endzone """
         self.letter = letter
         # Call the parent's constructor
-
-
         if self.letter == "a":
             print("Endzone called! a")
             self.image = pygame.image.load("a.jpg").convert()
@@ -144,8 +142,9 @@ class EndZone(pygame.sprite.Sprite):
             print("Endzone called! c")
             self.image = pygame.image.load("c.jpg").convert()
         elif self.letter == "d":
-            print("Endzone called! d")
             self.image = pygame.image.load("d.jpg").convert()
+            print("Endzone called! d")
+
         pygame.sprite.Sprite.__init__(self)
         # Make a green box
 
@@ -222,6 +221,7 @@ class Question:
 
 class Map():
     wall_list = None
+    end_zone_answer = None
     def __init__(self, walls, endzones, question):
         self.wall_list = pygame.sprite.Group()
         self.walls_to_make = walls[:]
@@ -277,8 +277,6 @@ class Map():
         # currently made all the maps into one. Now add a question variable.
         # Then create the loop to make the endzone
         # Make sure they are displaying
-
-
 #Map1
 map1_walls = [(10, 250, 450, 10, WHITE),
               (150, 350, 10, 175, WHITE),
@@ -295,10 +293,10 @@ map2_walls = [(10, 250, 450, 10, WHITE)]
 map2_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]
 #Map3
 map3_walls = [(150, 350, 10, 175, WHITE),
-                 (300, 350, 10, 175, WHITE),
-                 (450, 350, 10, 175, WHITE),
-                 (600, 350, 10, 175, WHITE),
-                 ]
+              (300, 350, 10, 175, WHITE),
+              (450, 350, 10, 175, WHITE),
+              (600, 350, 10, 175, WHITE),
+              ]
 
 map3_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]
 
@@ -411,4 +409,3 @@ while not done:
     clock.tick(60)
 
 pygame.quit()
-
