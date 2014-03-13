@@ -134,17 +134,13 @@ class EndZone(pygame.sprite.Sprite):
         self.letter = letter
         # Call the parent's constructor
         if self.letter == "a":
-            print("Endzone called! a")
             self.image = pygame.image.load("a.jpg").convert()
         elif self.letter == "b":
-            print("Endzone called! b")
             self.image = pygame.image.load("b.jpg").convert()
         elif self.letter == "c":
-            print("Endzone called! c")
             self.image = pygame.image.load("c.jpg").convert()
         elif self.letter == "d":
             self.image = pygame.image.load("d.jpg").convert()
-            print("Endzone called! d")
 
         # Make a green box
 
@@ -264,7 +260,6 @@ class Map():
 
         answer_zone = EndZone(four[0], four[1], self.answer_letter, self.question)
         end_zone_answer.add(answer_zone) # here it's adding them all to it. Not one at a time.
-        print(end_zone_answer)
 
         for i in range(len(EndZone_to_make)):
             end_zone = EndZone(*EndZone_to_make[i])
@@ -306,6 +301,7 @@ player_list = pygame.sprite.Group()
 end_zone_list = pygame.sprite.Group()
 
 end_zone_answer = pygame.sprite.Group()
+current_end_zone_answer = pygame.sprite.Group()
 
 global questions
 questions = []
@@ -338,10 +334,18 @@ rooms.append(Map(map1_walls, map1_endzones, 3))
 current_room_no = 0
 current_room = rooms[current_room_no]
 
+#set current endzone to answer
+
+
 # Create the player paddle object
 player = Player(200, 70)
 player.walls = current_room.wall_list
-player.end_zone_answer = end_zone_answer
+
+for i in end_zone_answer:
+    if i.type == current_question_no:
+        current_end_zone_answer.add(i)
+
+player.end_zone_answer = current_end_zone_answer
 player_list.add(player)
 
 clock = pygame.time.Clock()
@@ -395,6 +399,9 @@ while not done:
     for i in end_zone_answer:
         if i.type == current_question_no:
             i.draw(screen)
+            current_end_zone_answer.empty()
+            current_end_zone_answer.add(i)
+            player.end_zone_answer = current_end_zone_answer
 
     player.walls = rooms[current_room_no].wall_list
 
