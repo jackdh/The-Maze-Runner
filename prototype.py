@@ -2,6 +2,7 @@ import pygame
 import json
 import random
 
+
 """
 Global constants
 """
@@ -24,6 +25,24 @@ screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT], pygame.RESIZABLE
 # Set the title of the window
 pygame.display.set_caption('Prototype')
 
+#class for functions related to the spritesheet
+class SpriteSheet():
+    #points to sprite sheet image
+    sprite_sheet=None
+
+    def __init__(self, file_name):
+        #file name is passed as a parameter
+        self.sprite_sheet = pygame.image.load(file_name).convert()
+
+    def getImage( self, x, y, width, height):
+        #x and y is image start coordinate, width and length defines size of the sprite
+        image = pygame.Surface([width, length]).convert()
+
+        image.blit(self.sprite_sheet,(0,0),(x,y,width, length))
+
+        image.set_colorkey(constants.BLACK)
+
+        return image
 
 # This class represents the bar at the bottom that the player controls
 class Player(pygame.sprite.Sprite):
@@ -33,18 +52,63 @@ class Player(pygame.sprite.Sprite):
     change_x = 0
     change_y = 0
 
+    #list to hold images for moving left/right
+    walking_frames_l = []
+    walking_frames_r =[]
+    walking_frames_u = []
+    walking_frames_d=[]
+    #direction sprites facing
+    direction = "R"
+
     # Constructor function
     def __init__(self, start_y, start_x):
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
+        sprite_sheet = SpriteSheet("sprite_sheet")
 
+        #load sprites to right list
+        image= sprite_sheet.getImage(35,0,28,30)
+        self.walking_frames_r.append(image)
+        image= sprite_sheet.getImage(35,30,25,40)
+        self.walking_frames_r.append(image)
+        image= sprite_sheet.getImage(35,60,28,30)
+        self.walking_frames_r.append(image)
+
+        #load sprites to left list
+
+        image= sprite_sheet.getImage(88,1,25,30)
+        self.walking_frames_l.append(image)
+        image= sprite_sheet.getImage(88,30,25,30)
+        self.walking_frames_l.append(image)
+        image= sprite_sheet.getImage(88,60,25,30)
+        self.walking_frames_l.append(image)
+
+        #load sprites to up list
+        image= sprite_sheet.getImage(56,2,30,30)
+        self.walking_frames_u.append(image)
+        image= sprite_sheet.getImage(56,30,28,30)
+        self.walking_frames_u.append(image)
+        image= sprite_sheet.getImage(56,60,28,30)
+        self.walking_frames_u.append(image)
+
+        #load sprites to down list
+        image= sprite_sheet.getImage(0,0,28,30)
+        self.walking_frames_d.append(image)
+        image= sprite_sheet.getImage(0,35,28,30)
+        self.walking_frames_d.append(image)
+        image= sprite_sheet.getImage(0,65,28,30)
+        self.walking_frames_d.append(image)
+
+        #default image
+        self.image=self.walking_frames_r[0]
+               
         self.reset_position_y = start_y
         self.reset_position_x = start_x
 
         # Set height, width
-        self.image = pygame.Surface([15, 15])
-        self.image.fill(RED)
-
+        #self.image = pygame.Surface([15, 15])
+        #self.image.fill(RED)
+        
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
         self.rect.y = self.reset_position_y
@@ -93,6 +157,22 @@ class Player(pygame.sprite.Sprite):
 
             global current_question_no
             current_question_no += 1
+
+    def go_left(self):
+        self.change_x=-6
+        self.direction = "L"
+        
+    def go_right(self):
+        self.change_x=6
+        self.direction = "R"
+        
+    def go_up(self):
+        self.change_y =6
+        self.direction="U"
+
+    def go_down(self):
+        self.change_y=-6
+        self.direction="D"  
 
     def death_counter(self):
         font = pygame.font.Font(None, 20)
@@ -358,12 +438,16 @@ while not done:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 player.changespeed(-speed, 0)
+                player.go_left()
             elif event.key == pygame.K_RIGHT:
                 player.changespeed(speed, 0)
+                player.go_right()
             elif event.key == pygame.K_UP:
                 player.changespeed(0, -speed)
+                player.go_up()
             elif event.key == pygame.K_DOWN:
                 player.changespeed(0, speed)
+                player.go_down()
             elif event.key == pygame.K_ESCAPE:
                 pygame.quit()
 
@@ -390,7 +474,7 @@ while not done:
     player_list.draw(screen)
 
     rooms[current_room_no].wall_list.update()
-    rooms[current_room_no].wall_list.draw(screen)
+    
 
     end_zone_answer.draw(screen)
 
