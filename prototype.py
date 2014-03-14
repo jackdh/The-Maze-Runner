@@ -208,30 +208,29 @@ class Wall(pygame.sprite.Sprite):
 
 class EndZone(pygame.sprite.Sprite):
 
-    def __init__(self, x, y, letter):
+    def __init__(self, x, y, letter, question):
+        pygame.sprite.Sprite.__init__(self)
         """ Constructor for the Endzone """
         self.letter = letter
         # Call the parent's constructor
         if self.letter == "a":
-            print("Endzone called! a")
             self.image = pygame.image.load("a.jpg").convert()
         elif self.letter == "b":
-            print("Endzone called! b")
             self.image = pygame.image.load("b.jpg").convert()
         elif self.letter == "c":
-            print("Endzone called! c")
             self.image = pygame.image.load("c.jpg").convert()
         elif self.letter == "d":
             self.image = pygame.image.load("d.jpg").convert()
-            print("Endzone called! d")
-        pygame.sprite.Sprite.__init__(self)
+
         # Make a green box
 
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
         self.rect.y = y
         self.rect.x = x
-
+        self.type = question
+    def draw(self, screen):
+        screen.blit(self.image, self.rect)
 
 class Question:
     def __init__(self, number):
@@ -300,12 +299,11 @@ class Question:
 
 class Map():
     wall_list = None
-    end_zone_answer = None
     def __init__(self, walls, endzones, question):
         self.wall_list = pygame.sprite.Group()
-        self.walls_to_make = walls[:]
-        self.endzones = endzones[:]
-        self.question = question
+        self.walls_to_make = walls[:] # Split the walls up
+        self.endzones = endzones[:]   # Split the endzones up
+        self.question = question      # Question Number
 
         four_sides = [(0, 150, 10, 600, BLUE),
                       (10, 150, 580, 10, BLUE),    #The standard walls
@@ -316,24 +314,21 @@ class Map():
             wall = Wall(item[0], item[1], item[2], item[3], item[4])   # Make standard walls
             self.wall_list.add(wall)
 
-        for item in self.walls_to_make:   # Make specific walls
-            wall = Wall(item[0], item[1], item[2], item[3], item[4])
+        for item in self.walls_to_make:
+            wall = Wall(item[0], item[1], item[2], item[3], item[4])   # Make specific walls
             self.wall_list.add(wall)
 
         self.letters = ["a", "b", "c", "d"]
 
         self.answer_letter = questions[self.question].get_answer()  # Get the questions
-        print("answer:"+self.answer_letter)
+
         self.letters.pop(self.letters.index(self.answer_letter))  # remove the answer question from list of letters
 
         random.shuffle(self.letters)  # shuffle the remaining
 
         self.fake1 = self.letters.pop()
-        print("fake1:"+self.fake1)
         self.fake2 = self.letters.pop()  # Get fakes
-        print("fake2:"+self.fake2)
         self.fake3 = self.letters.pop()
-        print("fake2:"+self.fake3)
 
         self.possible_endzones = self.endzones  # Endzones for this map
         random.shuffle(self.possible_endzones)  # shuffle them
@@ -341,10 +336,10 @@ class Map():
         two = self.possible_endzones.pop()
         three = self.possible_endzones.pop()
         four = self.possible_endzones.pop()
-        EndZone_to_make = [(one[0], one[1], self.fake1), (two[0], two[1], self.fake2), (three[0], three[1], self.fake3)]
+        EndZone_to_make = [(one[0], one[1], self.fake1, self.question), (two[0], two[1], self.fake2, self.question), (three[0], three[1], self.fake3, self.question)]
 
-        answer_zone = EndZone(four[0], four[1], self.answer_letter)
-        end_zone_answer.add(answer_zone)
+        answer_zone = EndZone(four[0], four[1], self.answer_letter, self.question)
+        end_zone_answer.add(answer_zone) # here it's adding them all to it. Not one at a time.
 
         for i in range(len(EndZone_to_make)):
             end_zone = EndZone(*EndZone_to_make[i])
@@ -360,7 +355,7 @@ map1_walls = [(10, 250, 450, 10, WHITE),
               (600, 350, 10, 175, WHITE),
               ]
 
-map1_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]
+map1_endzones = [(70, 250), (220, 250), (370, 250), (520, 250)]
 
 #Map2
 map2_walls = [(10, 250, 450, 10, WHITE)]
@@ -373,7 +368,7 @@ map3_walls = [(150, 350, 10, 175, WHITE),
               (600, 350, 10, 175, WHITE),
               ]
 
-map3_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]
+map3_endzones = [(70, 550), (220, 550), (370, 550), (520, 550)]
 
 # Call this function so the Py game library can initialize itself
 
@@ -386,6 +381,7 @@ player_list = pygame.sprite.Group()
 end_zone_list = pygame.sprite.Group()
 
 end_zone_answer = pygame.sprite.Group()
+current_end_zone_answer = pygame.sprite.Group()
 
 global questions
 questions = []
@@ -418,10 +414,18 @@ rooms.append(Map(map1_walls, map1_endzones, 3))
 current_room_no = 0
 current_room = rooms[current_room_no]
 
+#set current endzone to answer
+
+
 # Create the player paddle object
 player = Player(200, 70)
 player.walls = current_room.wall_list
-player.end_zone_answer = end_zone_answer
+
+for i in end_zone_answer:
+    if i.type == current_question_no:
+        current_end_zone_answer.add(i)
+
+player.end_zone_answer = current_end_zone_answer
 player_list.add(player)
 
 clock = pygame.time.Clock()
@@ -476,8 +480,12 @@ while not done:
     rooms[current_room_no].wall_list.update()
     
 
-    end_zone_answer.draw(screen)
-
+    for i in end_zone_answer:
+        if i.type == current_question_no:
+            i.draw(screen)
+            current_end_zone_answer.empty()
+            current_end_zone_answer.add(i)
+            player.end_zone_answer = current_end_zone_answer
 
     player.walls = rooms[current_room_no].wall_list
 
