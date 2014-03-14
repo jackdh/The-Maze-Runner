@@ -398,7 +398,9 @@ while not done:
 
     for i in end_zone_answer:
         if i.type == current_question_no:
+
             i.draw(screen)
+
             current_end_zone_answer.empty()
             current_end_zone_answer.add(i)
             player.end_zone_answer = current_end_zone_answer

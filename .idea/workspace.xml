@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="">
+    <list default="true" id="aeba76cb-1d55-40a0-bdd1-44e365cebd75" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Dropbox\People\Group 10\The Game\.idea\dictionaries\jack.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/The Game.iml" afterPath="$PROJECT_DIR$/.idea/The Game.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype.py" afterPath="$PROJECT_DIR$/prototype.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions.json" afterPath="$PROJECT_DIR$/questions.json" />
-    </list>
-    <list id="931f01aa-e3b1-4ef8-8e30-33f7678e854b" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jack.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="The Game.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/test.py" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +18,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/The Game$Prototype.coverage" NAME="Prototype Coverage Results" MODIFIED="1391974599003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/The Game$test.coverage" NAME="test Coverage Results" MODIFIED="1393521082600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$Prototype__1_.coverage" NAME="Prototype (1) Coverage Results" MODIFIED="1392740983698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$questions.coverage" NAME="questions Coverage Results" MODIFIED="1392059323627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$Snippets.coverage" NAME="Snippets Coverage Results" MODIFIED="1391908667951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1393531390545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The Game$prototype.coverage" NAME="prototype Coverage Results" MODIFIED="1394719521518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -43,30 +35,10 @@
       <file leaf-file-name="prototype.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prototype.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="0" selection-start="10260" selection-end="10260" vertical-scroll-proportion="0.7481203" vertical-offset="2968" max-vertical-offset="4709">
+            <state line="330" column="0" selection-start="10402" selection-end="10402" vertical-scroll-proportion="0.2236842" vertical-offset="5474" max-vertical-offset="7157">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#551#3024#0" expanded="false" />
-                <element signature="e#4491#6591#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questions.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/questions.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-17.5" vertical-offset="123" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="578">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -79,30 +51,25 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../Prototype.py" />
-        <option value="$PROJECT_DIR$/questions.py" />
-        <option value="$PROJECT_DIR$/questions.txt" />
-        <option value="$PROJECT_DIR$/question_code.py" />
-        <option value="$PROJECT_DIR$/Snippets.py" />
-        <option value="$PROJECT_DIR$/Prototype.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$USER_HOME$/.PyCharm30/system/python_stubs/-1571908645/builtins.py" />
-        <option value="$PROJECT_DIR$/questions.json" />
         <option value="$PROJECT_DIR$/prototype.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-6" />
-    <option name="y" value="45" />
-    <option name="width" value="1223" />
-    <option name="height" value="939" />
+    <option name="y" value="29" />
+    <option name="width" value="1151" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -118,7 +85,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -129,64 +96,24 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="SearchEverywhereHistory" value="&#10;protot" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="124" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="124" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="124" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="798" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="128" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="117" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="123" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="802" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/work" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings />
+      <PyConsoleSettings />
     </option>
   </component>
   <component name="RunManager" selected="Python.prototype">
-    <configuration default="false" name="questions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="prototype" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -199,45 +126,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="The Game" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/questions.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Prototype" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Prototype.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Snippets" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Snippets.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prototype.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -393,82 +282,12 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="prototype" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prototype.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Prototype (1)" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="The Game" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <list size="6">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.prototype" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Prototype (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.questions" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Prototype" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Snippets" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.questions" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Prototype" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Snippets" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.prototype" />
       </list>
     </recent_temporary>
   </component>
@@ -492,79 +311,45 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2638ca8a-cbcc-4864-94ad-598d9056af95" name="Default" comment="" />
-      <changelist id="931f01aa-e3b1-4ef8-8e30-33f7678e854b" name="New changelist" comment="" />
-      <created>1391893843707</created>
-      <updated>1391893843707</updated>
+      <changelist id="aeba76cb-1d55-40a0-bdd1-44e365cebd75" name="Default" comment="" />
+      <created>1394399084355</created>
+      <updated>1394399084355</updated>
     </task>
-    <task id="LOCAL-00001" summary="initial commit - Base template">
-      <created>1391894640128</created>
-      <updated>1391894640128</updated>
+    <task id="LOCAL-00001" summary="Fixed multiplication bug">
+      <created>1394718597433</created>
+      <updated>1394718597433</updated>
     </task>
-    <task id="LOCAL-00002" summary="Walls and when the player connects with the wall it will reset">
-      <created>1391909434664</created>
-      <updated>1391909434664</updated>
+    <task id="LOCAL-00002" summary="Fixed invisable walls">
+      <created>1394719635418</created>
+      <updated>1394719635418</updated>
     </task>
-    <task id="LOCAL-00003" summary="Semi setup, walls and fake endzone made.">
-      <created>1391913180545</created>
-      <updated>1391913180545</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Questions working">
-      <created>1392080910863</created>
-      <updated>1392080910863</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Questions working">
-      <created>1392142770699</created>
-      <updated>1392142770699</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Simplified question creation and wall creation">
-      <created>1392158819799</created>
-      <updated>1392158819799</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Cleaned up useless files.">
-      <created>1392158921051</created>
-      <updated>1392158921051</updated>
-    </task>
-    <task id="LOCAL-00008" summary="No more invisable walls!">
-      <created>1393439257510</created>
-      <updated>1393439257510</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic">
-      <created>1393454157035</created>
-      <updated>1393454157035</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="45" width="1223" height="939" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="29" width="1151" height="1040" extended-state="1" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11350456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24770643" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24977043" sideWeight="0.7316798" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26993006" sideWeight="0.8067797" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23623854" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33013207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26892656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -573,399 +358,64 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="initial commit - Base template" />
-    <MESSAGE value="Walls and when the player connects with the wall it will reset" />
-    <MESSAGE value="Semi setup, walls and fake endzone made." />
-    <MESSAGE value="Questions working" />
-    <MESSAGE value="Simplified question creation and wall creation" />
-    <MESSAGE value="Cleaned up useless files." />
-    <MESSAGE value="No more invisable walls!" />
-    <MESSAGE value="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Currently working on when the map is made it is allways made with question 0 instead of making it dynamic" />
+    <MESSAGE value="Fixed multiplication bug" />
+    <MESSAGE value="Fixed invisable walls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed invisable walls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/prototype.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/prototype.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="375" column="0" selection-start="10760" selection-end="10760" vertical-scroll-proportion="0.0" vertical-offset="5801" max-vertical-offset="7701">
+        <state line="393" column="29" selection-start="12114" selection-end="12114" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="4675">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="80" selection-start="7137" selection-end="7137" vertical-scroll-proportion="0.0" vertical-offset="3732" max-vertical-offset="7701">
+        <state line="389" column="49" selection-start="0" selection-end="12194" vertical-scroll-proportion="0.0" vertical-offset="5933" max-vertical-offset="5933">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="40" selection-start="7402" selection-end="7402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5287">
+        <state line="220" column="12" selection-start="6728" selection-end="6729" vertical-scroll-proportion="0.0" vertical-offset="3740" max-vertical-offset="4675">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="41" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0" vertical-offset="778" max-vertical-offset="5950">
+        <state line="330" column="0" selection-start="10402" selection-end="10402" vertical-scroll-proportion="0.2236842" vertical-offset="5474" max-vertical-offset="7157">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="35" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.0" vertical-offset="5491" max-vertical-offset="5661">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="36" selection-start="6031" selection-end="6031" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="5610">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="30" selection-start="9197" selection-end="9197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4760">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="13" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0" vertical-offset="4086" max-vertical-offset="4760">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4794">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="47" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="23" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2083" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2049" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="14" selection-start="4214" selection-end="4214" vertical-scroll-proportion="0.0" vertical-offset="2015" max-vertical-offset="4590">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="11" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="4607">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="0" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="4454">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="-19.04" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-1571908645/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3520" column="8" selection-start="122247" selection-end="122247" vertical-scroll-proportion="0.33226323" vertical-offset="59633" max-vertical-offset="95574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-17.5" vertical-offset="123" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prototype.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="0" selection-start="10260" selection-end="10260" vertical-scroll-proportion="0.7481203" vertical-offset="2968" max-vertical-offset="4709">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#551#3024#0" expanded="false" />
-            <element signature="e#4491#6591#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
   </component>
 </project>
+
