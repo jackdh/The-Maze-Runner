@@ -30,17 +30,17 @@ class SpriteSheet():
     #points to sprite sheet image
     sprite_sheet=None
 
-    def __init__(self, file_name):
+    def __init__(self, sprite_file):
         #file name is passed as a parameter
-        self.sprite_sheet = pygame.image.load(file_name).convert()
+        self.sprite_sheet = pygame.image.load(sprite_file).convert()
 
-    def getImage( self, x, y, width, height):
+    def get_image(self, x, y, width, height):
         #x and y is image start coordinate, width and length defines size of the sprite
-        image = pygame.Surface([width, length]).convert()
+        image = pygame.Surface([width, height]).convert()
 
-        image.blit(self.sprite_sheet,(0,0),(x,y,width, length))
+        image.blit(self.sprite_sheet, (0, 0), (x, y, width, height))
 
-        image.set_colorkey(constants.BLACK)
+        image.set_colorkey(BLACK)
 
         return image
 
@@ -54,9 +54,9 @@ class Player(pygame.sprite.Sprite):
 
     #list to hold images for moving left/right
     walking_frames_l = []
-    walking_frames_r =[]
+    walking_frames_r = []
     walking_frames_u = []
-    walking_frames_d=[]
+    walking_frames_d = []
     #direction sprites facing
     direction = "R"
 
@@ -64,43 +64,43 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, start_y, start_x):
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
-        sprite_sheet = SpriteSheet("sprite_sheet")
+        sprite_sheet = SpriteSheet("sprite_sheet.png")
 
         #load sprites to right list
-        image= sprite_sheet.getImage(35,0,28,30)
+        image = sprite_sheet.get_image(33, 1, 19, 30)
         self.walking_frames_r.append(image)
-        image= sprite_sheet.getImage(35,30,25,40)
+        image = sprite_sheet.get_image(33, 30, 19, 36)
         self.walking_frames_r.append(image)
-        image= sprite_sheet.getImage(35,60,28,30)
+        image = sprite_sheet.get_image(33, 62, 19, 29)
         self.walking_frames_r.append(image)
 
-        #load sprites to left list
+        #load sprites to left direction list
 
-        image= sprite_sheet.getImage(88,1,25,30)
+        image = sprite_sheet.get_image(88, 1, 18, 30)
         self.walking_frames_l.append(image)
-        image= sprite_sheet.getImage(88,30,25,30)
+        image = sprite_sheet.get_image(88, 30, 18, 36)
         self.walking_frames_l.append(image)
-        image= sprite_sheet.getImage(88,60,25,30)
+        image = sprite_sheet.get_image(88, 60, 18, 29)
         self.walking_frames_l.append(image)
 
-        #load sprites to up list
-        image= sprite_sheet.getImage(56,2,30,30)
+        #load sprites to up direction list
+        image = sprite_sheet.get_image(56, 1, 24, 30)
         self.walking_frames_u.append(image)
-        image= sprite_sheet.getImage(56,30,28,30)
+        image = sprite_sheet.get_image(56, 30, 24, 36)
         self.walking_frames_u.append(image)
-        image= sprite_sheet.getImage(56,60,28,30)
+        image = sprite_sheet.get_image(56, 62, 24, 29)
         self.walking_frames_u.append(image)
 
-        #load sprites to down list
-        image= sprite_sheet.getImage(0,0,28,30)
+        #load sprites to down direction list
+        image = sprite_sheet.get_image(0, 1, 28, 30)
         self.walking_frames_d.append(image)
-        image= sprite_sheet.getImage(0,35,28,30)
+        image = sprite_sheet.get_image(0, 30, 28, 32)
         self.walking_frames_d.append(image)
-        image= sprite_sheet.getImage(0,65,28,30)
+        image = sprite_sheet.get_image(0, 62, 28, 29)
         self.walking_frames_d.append(image)
 
-        #default image
-        self.image=self.walking_frames_r[0]
+        #this sets the start facing direction
+        self.image = self.walking_frames_r[0]
                
         self.reset_position_y = start_y
         self.reset_position_x = start_x
@@ -124,8 +124,23 @@ class Player(pygame.sprite.Sprite):
 
     def update(self):
         """ Update the player position. """
-        # Move left/right
+        # Move left/right,  choose the frame from the list your facing and print to screen
         self.rect.x += self.change_x
+
+        pos = self.rect.x
+        if self.direction == "R":
+            frame = (pos//30) % len(self.walking_frames_r)
+            self.image = self.walking_frames_r[frame]
+        elif self.direction == "U":
+            frame = (pos//30) % len(self.walking_frames_u)
+            self.image = self.walking_frames_u[frame]
+        elif self.direction == "D":
+            frame = (pos//30) % len(self.walking_frames_d)
+            self.image = self.walking_frames_d[frame]
+        else:
+            frame = (pos//30) % len(self.walking_frames_l)
+            self.image = self.walking_frames_l[frame]
+
 
         # Did this update cause us to hit a wall?
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
@@ -158,21 +173,18 @@ class Player(pygame.sprite.Sprite):
             global current_question_no
             current_question_no += 1
 
+#these methods change what direction the sprite is facing
     def go_left(self):
-        self.change_x=-6
         self.direction = "L"
         
     def go_right(self):
-        self.change_x=6
         self.direction = "R"
         
     def go_up(self):
-        self.change_y =6
-        self.direction="U"
+        self.direction = "U"
 
     def go_down(self):
-        self.change_y=-6
-        self.direction="D"  
+        self.direction = "D"
 
     def death_counter(self):
         font = pygame.font.Font(None, 20)
@@ -229,6 +241,7 @@ class EndZone(pygame.sprite.Sprite):
         self.rect.y = y
         self.rect.x = x
         self.type = question
+
     def draw(self, screen):
         screen.blit(self.image, self.rect)
 
@@ -299,6 +312,7 @@ class Question:
 
 class Map():
     wall_list = None
+
     def __init__(self, walls, endzones, question):
         self.wall_list = pygame.sprite.Group()
         self.walls_to_make = walls[:] # Split the walls up
@@ -430,7 +444,7 @@ player_list.add(player)
 
 clock = pygame.time.Clock()
 
-speed = 7
+speed = 6
 
 done = False
 while not done:
@@ -478,7 +492,6 @@ while not done:
     player_list.draw(screen)
 
     rooms[current_room_no].wall_list.update()
-    
 
     for i in end_zone_answer:
         if i.type == current_question_no:
