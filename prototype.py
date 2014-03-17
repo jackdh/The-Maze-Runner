@@ -176,10 +176,10 @@ class Player(pygame.sprite.Sprite):
 #these methods change what direction the sprite is facing
     def go_left(self):
         self.direction = "L"
-        
+
     def go_right(self):
         self.direction = "R"
-        
+
     def go_up(self):
         self.direction = "U"
 
