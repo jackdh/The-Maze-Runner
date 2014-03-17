@@ -105,7 +105,7 @@ class Player(pygame.sprite.Sprite):
         self.reset_position_y = start_y
         self.reset_position_x = start_x
 
-        # Set height, width
+        # Set height, width - original red block sprite
         #self.image = pygame.Surface([15, 15])
         #self.image.fill(RED)
         
