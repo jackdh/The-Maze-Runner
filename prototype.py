@@ -67,8 +67,8 @@ class Player(pygame.sprite.Sprite):
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
             self.deaths += 1
-            self.rect.y = self.reset_position_y
-            self.rect.x = self.reset_position_x
+            #self.rect.y = self.reset_position_y
+            #self.rect.x = self.reset_position_x
 
         # Move up/down
         self.rect.y += self.change_y
@@ -77,8 +77,8 @@ class Player(pygame.sprite.Sprite):
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
             self.deaths += 1
-            self.rect.y = self.reset_position_y
-            self.rect.x = self.reset_position_x
+            #self.rect.y = self.reset_position_y
+            #self.rect.x = self.reset_position_x
 
         if pygame.sprite.spritecollide(self, self.end_zone_answer, False):
             self.answered += 1
@@ -86,7 +86,7 @@ class Player(pygame.sprite.Sprite):
             self.rect.x = self.reset_position_x
             global current_room_no
 
-            if current_room_no == 2:
+            if current_room_no == len(questions): #Make this dynamic to the total amount of questions.
                 current_room_no = 0
             else:
                 current_room_no += 1
@@ -149,6 +149,7 @@ class EndZone(pygame.sprite.Sprite):
         self.rect.y = y
         self.rect.x = x
         self.type = question
+
     def draw(self, screen):
         screen.blit(self.image, self.rect)
 
@@ -358,6 +359,8 @@ rooms.append(Map(map2_walls, map2_endzones, 1))
 rooms.append(Map(map3_walls, map3_endzones, 2))
 
 rooms.append(Map(map1_walls, map1_endzones, 3))
+rooms.append(Map(map1_walls, map1_endzones, 4))
+
 
 current_room_no = 0
 current_room = rooms[current_room_no]
@@ -368,10 +371,6 @@ current_room = rooms[current_room_no]
 # Create the player paddle object
 player = Player(200, 70)
 player.walls = current_room.wall_list
-
-for i in end_zone_answer:
-    if i.type == current_question_no:
-        current_end_zone_answer.add(i)
 
 player.end_zone_answer = current_end_zone_answer
 player_list.add(player)
@@ -420,15 +419,18 @@ while not done:
     player_list.update()
 
     player_list.draw(screen)
+    try:
+        rooms[current_room_no].wall_list.update()
+        rooms[current_room_no].wall_list.draw(screen)
+    except IndexError:
+        print("Out of questions")
+        print("Game will not exit")
+        pygame.quit()
 
-    rooms[current_room_no].wall_list.update()
-    rooms[current_room_no].wall_list.draw(screen)
 
     for i in end_zone_answer:
         if i.type == current_question_no:
-
             i.draw(screen)
-
             current_end_zone_answer.empty()
             current_end_zone_answer.add(i)
             player.end_zone_answer = current_end_zone_answer
