@@ -134,13 +134,13 @@ class EndZone(pygame.sprite.Sprite):
         self.letter = letter
         # Call the parent's constructor
         if self.letter == "a":
-            self.image = pygame.image.load("a.png").convert()
+            self.image = pygame.image.load("a.jpg").convert()
         elif self.letter == "b":
-            self.image = pygame.image.load("b.png").convert()
+            self.image = pygame.image.load("b.jpg").convert()
         elif self.letter == "c":
-            self.image = pygame.image.load("c.png").convert()
+            self.image = pygame.image.load("c.jpg").convert()
         elif self.letter == "d":
-            self.image = pygame.image.load("d.png").convert()
+            self.image = pygame.image.load("d.jpg").convert()
 
         # Make a green box
 
