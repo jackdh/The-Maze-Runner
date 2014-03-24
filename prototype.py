@@ -492,6 +492,8 @@ while not done:
     player_list.draw(screen)
 
     rooms[current_room_no].wall_list.update()
+    rooms[current_room_no].wall_list.draw(screen)
+
 
     for i in end_zone_answer:
         if i.type == current_question_no:
