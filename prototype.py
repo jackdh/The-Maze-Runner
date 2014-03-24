@@ -57,10 +57,14 @@ class Player(pygame.sprite.Sprite):
         """ Change the speed of the player. """
         self.change_x += x
         self.change_y += y
+        print("y: "+ str(self.rect.y))
+        print("x: "+ str(self.rect.x))
+        print()
 
     def update(self):
         """ Update the player position. """
         # Move left/right
+
         self.rect.x += self.change_x
 
         # Did this update cause us to hit a wall?
@@ -377,7 +381,7 @@ player_list.add(player)
 
 clock = pygame.time.Clock()
 
-speed = 7
+speed = 1
 
 done = False
 while not done:
