@@ -147,8 +147,8 @@ class Player(pygame.sprite.Sprite):
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
             self.deaths += 1
-            #self.rect.y = self.reset_position_y
-            #self.rect.x = self.reset_position_x
+            self.rect.y = self.reset_position_y
+            self.rect.x = self.reset_position_x
 
         # Move up/down
         self.rect.y += self.change_y
@@ -157,8 +157,8 @@ class Player(pygame.sprite.Sprite):
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
         for block in block_hit_list:
             self.deaths += 1
-            #self.rect.y = self.reset_position_y
-            #self.rect.x = self.reset_position_x
+            self.rect.y = self.reset_position_y
+            self.rect.x = self.reset_position_x
 
         if pygame.sprite.spritecollide(self, self.end_zone_answer, False):
             self.answered += 1
