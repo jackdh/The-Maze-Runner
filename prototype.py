@@ -24,6 +24,23 @@ screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT], pygame.RESIZABLE
 # Set the title of the window
 pygame.display.set_caption('Prototype')
 
+class SpriteSheet():
+    #points to sprite sheet image
+    sprite_sheet=None
+
+    def __init__(self, sprite_file):
+        #file name is passed as a parameter
+        self.sprite_sheet = pygame.image.load(sprite_file).convert()
+
+    def get_image(self, x, y, width, height):
+        #x and y is image start coordinate, width and length defines size of the sprite
+        image = pygame.Surface([width, height]).convert()
+
+        image.blit(self.sprite_sheet, (0, 0), (x, y, width, height))
+
+        image.set_colorkey(BLACK)
+
+        return image
 
 # This class represents the bar at the bottom that the player controls
 class Player(pygame.sprite.Sprite):
@@ -32,18 +49,64 @@ class Player(pygame.sprite.Sprite):
     # Set speed vector
     change_x = 0
     change_y = 0
+    
+    #list to hold images for moving left/right
+    walking_frames_l = []
+    walking_frames_r = []
+    walking_frames_u = []
+    walking_frames_d = []
+    
+    #direction sprites facing
+    direction = "R"
 
     # Constructor function
     def __init__(self, start_y, start_x):
         # Call the parent's constructor
         pygame.sprite.Sprite.__init__(self)
+        sprite_sheet = SpriteSheet("sprite_sheet.png")
+
+        #load sprites to right list
+        image = sprite_sheet.get_image(33, 1, 19, 30)
+        self.walking_frames_r.append(image)
+        image = sprite_sheet.get_image(33, 30, 19, 36)
+        self.walking_frames_r.append(image)
+        image = sprite_sheet.get_image(33, 62, 19, 29)
+        self.walking_frames_r.append(image)
+
+        #load sprites to left direction list
+
+        image = sprite_sheet.get_image(88, 1, 18, 30)
+        self.walking_frames_l.append(image)
+        image = sprite_sheet.get_image(88, 30, 18, 36)
+        self.walking_frames_l.append(image)
+        image = sprite_sheet.get_image(88, 60, 18, 29)
+        self.walking_frames_l.append(image)
+
+        #load sprites to up direction list
+        image = sprite_sheet.get_image(56, 1, 24, 30)
+        self.walking_frames_u.append(image)
+        image = sprite_sheet.get_image(56, 30, 24, 36)
+        self.walking_frames_u.append(image)
+        image = sprite_sheet.get_image(56, 62, 24, 29)
+        self.walking_frames_u.append(image)
+
+        #load sprites to down direction list
+        image = sprite_sheet.get_image(0, 1, 28, 30)
+        self.walking_frames_d.append(image)
+        image = sprite_sheet.get_image(0, 30, 28, 32)
+        self.walking_frames_d.append(image)
+        image = sprite_sheet.get_image(0, 62, 28, 29)
+        self.walking_frames_d.append(image)
+
+        #this sets the start facing direction
+        self.image = self.walking_frames_r[0]
 
         self.reset_position_y = start_y
         self.reset_position_x = start_x
 
         # Set height, width
-        self.image = pygame.Surface([15, 15])
-        self.image.fill(RED)
+        #self.image = pygame.Surface([15, 15])
+        #self.image.fill(RED)
 
         # Make our top-left corner the passed-in location.
         self.rect = self.image.get_rect()
@@ -66,6 +129,19 @@ class Player(pygame.sprite.Sprite):
         # Move left/right
 
         self.rect.x += self.change_x
+        pos = self.rect.x
+        if self.direction == "R":
+            frame = (pos//60) % len(self.walking_frames_r)
+            self.image = self.walking_frames_r[frame]
+        elif self.direction == "U":
+            frame = (pos//60) % len(self.walking_frames_u)
+            self.image = self.walking_frames_u[frame]
+        elif self.direction == "D":
+            frame = (pos//60) % len(self.walking_frames_d)
+            self.image = self.walking_frames_d[frame]
+        else:
+            frame = (pos//60) % len(self.walking_frames_l)
+            self.image = self.walking_frames_l[frame]
 
         # Did this update cause us to hit a wall?
         block_hit_list = pygame.sprite.spritecollide(self, self.walls, False)
@@ -97,6 +173,19 @@ class Player(pygame.sprite.Sprite):
 
             global current_question_no
             current_question_no += 1
+
+    #these methods change what direction the sprite is facing
+    def go_left(self):
+        self.direction = "L"
+
+    def go_right(self):
+        self.direction = "R"
+
+    def go_up(self):
+        self.direction = "U"
+
+    def go_down(self):
+        self.direction = "D"
 
     def death_counter(self):
         font = pygame.font.Font(None, 20)
@@ -381,7 +470,7 @@ player_list.add(player)
 
 clock = pygame.time.Clock()
 
-speed = 1
+speed = 5
 
 done = False
 while not done:
@@ -393,12 +482,16 @@ while not done:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
                 player.changespeed(-speed, 0)
+                player.go_left()
             elif event.key == pygame.K_RIGHT:
                 player.changespeed(speed, 0)
+                player.go_right()
             elif event.key == pygame.K_UP:
                 player.changespeed(0, -speed)
+                player.go_up()
             elif event.key == pygame.K_DOWN:
                 player.changespeed(0, speed)
+                player.go_down()
             elif event.key == pygame.K_ESCAPE:
                 pygame.quit()
 
