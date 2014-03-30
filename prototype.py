@@ -19,8 +19,8 @@ SCREEN_HEIGHT = 600
 pygame.init()
 
 # Create an 800x600 sized screen
-screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT], pygame.RESIZABLE)
-
+screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
+background_image = pygame.image.load("background.png").convert()
 # Set the title of the window
 pygame.display.set_caption('Prototype')
 
@@ -475,6 +475,7 @@ speed = 5
 done = False
 while not done:
 
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
@@ -505,7 +506,8 @@ while not done:
             elif event.key == pygame.K_DOWN:
                 player.changespeed(0, -speed)
 
-    screen.fill(BLACK)
+
+    screen.blit(background_image, [0, 0])
 
     questions[current_question_no].print_question()
 
