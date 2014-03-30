@@ -120,8 +120,9 @@ class Player(pygame.sprite.Sprite):
         """ Change the speed of the player. """
         self.change_x += x
         self.change_y += y
-        print("y: "+ str(self.rect.y))
         print("x: "+ str(self.rect.x))
+        print("y: "+ str(self.rect.y))
+
         print()
 
     def update(self):
@@ -369,7 +370,7 @@ map1_walls = [(10, 250, 450, 10, WHITE),
               (600, 350, 10, 175, WHITE),
               ]
 
-map1_endzones = [(70, 434), (220, 434), (370, 434), (520, 434)]
+map1_endzones = [(70, 300), (220, 300), (370, 300), (520, 300)]
 
 #Map2
 map2_walls = [(140, 250, 450, 10, WHITE),
@@ -408,9 +409,41 @@ map3_walls = [(150, 350, 10, 240, WHITE),
               (400, 160, 10, 40, WHITE),
               (450, 220, 80, 10, WHITE),
               (10, 300, 490, 10, WHITE),
-              (540, 250, 10, 50, WHITE)]
+              (530, 250, 10, 50, WHITE)]
 
 map3_endzones = [(70, 550), (220, 550), (370, 550), (520, 550)]
+# accross down width height
+map4_walls = [(130, 160, 10, 250, WHITE),
+              (110, 465, 10, 70, WHITE),
+              (10, 465, 230, 10, WHITE),
+              (230, 210, 10, 320, WHITE),
+              (330, 210, 10, 380, WHITE),
+              (330, 210, 210, 10, WHITE),
+              (530, 220, 10, 50, WHITE),
+              (400, 330, 190, 10, WHITE),
+              (400, 330, 10, 70, WHITE),
+              (330, 460, 210, 10, WHITE)
+
+
+              ]
+
+map4_endzones = [(50, 500), (170, 500), (480, 240), (370, 500)]
+
+map5_walls = [(230, 160, 10, 250, WHITE),
+              (110, 465, 10, 130, WHITE),
+              (110, 465, 130, 10, WHITE),
+              (230, 465, 10, 80, WHITE),
+              (330, 210, 10, 380, WHITE),
+              (330, 210, 210, 10, WHITE),
+              (530, 220, 10, 50, WHITE),
+              (400, 330, 190, 10, WHITE),
+              (400, 330, 10, 70, WHITE),
+              (330, 460, 210, 10, WHITE)
+
+
+              ]
+
+map5_endzones = [(170, 500), (430, 360), (480, 240), (370, 500)]
 
 # Call this function so the Py game library can initialize itself
 

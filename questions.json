@@ -33,6 +33,41 @@
         "fake1": "1",
         "fake2": "2",
         "fake3": "3"
+    },
+    {
+        "question": "At Oxford Brookes Wheatley Campus, who is the T Building Named after?",
+        "answer": "Alan Turing",
+        "fake1": "Terry Pearls",
+        "fake2": "Thomas the Tank Engine",
+        "fake3": "Edward Taylor"
+    },
+	{
+        "question": "In terms of computing, what does CPU stand for?",
+        "answer": "Central Processing Unit",
+        "fake1": "Centre Processor Upload",
+        "fake2": "Computing Practising Unix",
+        "fake3": "Computer Processer Unit"
+    },
+    {
+        "question": "Firefox, Opera, Chrome, Safari and Explorer are types of what?",
+        "answer": "Web Browsers",
+        "fake1": "Games",
+        "fake2": "Microsoft Documents",
+        "fake3": "Programmes"
+    },
+    {
+        "question": "What does the IT abbreviation for R.O.M. mean?",
+        "answer": "Read Only Memory",
+        "fake1": "Read Only Microband",
+        "fake2": "Randomness Of Memory",
+        "fake3": "Release Of Memory"
+    },
+	{
+        "question": "What did Steve Jobs and Steve Wozniak form in 1976?",
+        "answer": "Apple",
+        "fake1": "Microsoft",
+        "fake2": "Firefox",
+        "fake3": "Spotify"
     }
 	
 	
