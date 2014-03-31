@@ -22,7 +22,7 @@ pygame.init()
 screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
 background_image = pygame.image.load("background.png").convert()
 # Set the title of the window
-pygame.display.set_caption('Prototype')
+pygame.display.set_caption('Maze Runner Challenge')
 
 class SpriteSheet():
     #points to sprite sheet image
