@@ -370,7 +370,7 @@ map1_walls = [(10, 250, 450, 10, WHITE),
               (600, 350, 10, 175, WHITE),
               ]
 
-map1_endzones = [(70, 300), (220, 300), (370, 300), (520, 300)]
+map1_endzones = [(70, 450), (220, 450), (370, 450), (520, 450)]
 
 #Map2
 map2_walls = [(140, 250, 450, 10, WHITE),
@@ -476,6 +476,19 @@ questions.append(question)
 question = Question(4)
 questions.append(question)
 
+question = Question(5)
+questions.append(question)
+
+question = Question(6)
+questions.append(question)
+
+question = Question(7)
+questions.append(question)
+
+question = Question(8)
+questions.append(question)
+
+
 current_question_no = 0
 
 
@@ -486,6 +499,12 @@ rooms.append(Map(map3_walls, map3_endzones, 2))
 
 rooms.append(Map(map4_walls, map4_endzones, 3))
 rooms.append(Map(map5_walls, map5_endzones, 4))
+
+rooms.append(Map(map1_walls, map1_endzones, 5))
+rooms.append(Map(map2_walls, map2_endzones, 6))
+rooms.append(Map(map3_walls, map3_endzones, 7))
+
+rooms.append(Map(map4_walls, map4_endzones, 8))
 
 
 current_room_no = 0

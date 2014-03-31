@@ -28,13 +28,6 @@
         "fake3": "nothing"
     },
     {
-        "question": "This is the 4th question",
-        "answer": "4",
-        "fake1": "1",
-        "fake2": "2",
-        "fake3": "3"
-    },
-    {
         "question": "At Oxford Brookes Wheatley Campus, who is the T Building Named after?",
         "answer": "Alan Turing",
         "fake1": "Terry Pearls",
