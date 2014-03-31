@@ -484,8 +484,8 @@ rooms.append(Map(map1_walls, map1_endzones, 0))
 rooms.append(Map(map2_walls, map2_endzones, 1))
 rooms.append(Map(map3_walls, map3_endzones, 2))
 
-rooms.append(Map(map1_walls, map1_endzones, 3))
-rooms.append(Map(map1_walls, map1_endzones, 4))
+rooms.append(Map(map4_walls, map4_endzones, 3))
+rooms.append(Map(map5_walls, map5_endzones, 4))
 
 
 current_room_no = 0
