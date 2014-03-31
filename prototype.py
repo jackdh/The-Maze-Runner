@@ -1,4 +1,4 @@
-mport pygame
+import pygame
 import json
 import random
 
@@ -227,13 +227,13 @@ class EndZone(pygame.sprite.Sprite):
         self.letter = letter
         # Call the parent's constructor
         if self.letter == "a":
-            self.image = pygame.image.load("a.png").convert()
+            self.image = pygame.image.load("a.png").convert_alpha()
         elif self.letter == "b":
-            self.image = pygame.image.load("b.png").convert()
+            self.image = pygame.image.load("b.png").convert_alpha()
         elif self.letter == "c":
-            self.image = pygame.image.load("c.png").convert()
+            self.image = pygame.image.load("c.png").convert_alpha()
         elif self.letter == "d":
-            self.image = pygame.image.load("d.png").convert()
+            self.image = pygame.image.load("d.png").convert_alpha()
 
         # Make a green box
 
