@@ -120,10 +120,6 @@ class Player(pygame.sprite.Sprite):
         """ Change the speed of the player. """
         self.change_x += x
         self.change_y += y
-        print("x: "+ str(self.rect.x))
-        print("y: "+ str(self.rect.y))
-
-        print()
 
     def update(self):
         """ Update the player position. """
@@ -609,11 +605,11 @@ rooms.append(Map(map3_walls, map3_endzones, 2))
 rooms.append(Map(map4_walls, map4_endzones, 3))
 rooms.append(Map(map5_walls, map5_endzones, 4))
 
-rooms.append(Map(map1_walls, map1_endzones, 5))
-rooms.append(Map(map2_walls, map2_endzones, 6))
-rooms.append(Map(map3_walls, map3_endzones, 7))
+rooms.append(Map(map6_walls, map6_endzones, 5))
+rooms.append(Map(map1_walls, map1_endzones, 6))
+rooms.append(Map(map2_walls, map2_endzones, 7))
 
-rooms.append(Map(map4_walls, map4_endzones, 8))
+rooms.append(Map(map3_walls, map3_endzones, 8))
 
 
 current_room_no = 0

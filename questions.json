@@ -35,11 +35,11 @@
         "fake3": "Edward Taylor"
     },
 	{
-        "question": "In terms of computing, what does CPU stand for?",
-        "answer": "Central Processing Unit",
-        "fake1": "Centre Processor Upload",
-        "fake2": "Computing Practising Unix",
-        "fake3": "Computer Processer Unit"
+        "question": "Who's the best?",
+        "answer": "Bob Champion",
+        "fake1": "Bill Gates",
+        "fake2": "Gandhi",
+        "fake3": "Mother Teresa"
     },
     {
         "question": "Firefox, Opera, Chrome, Safari and Explorer are types of what?",
